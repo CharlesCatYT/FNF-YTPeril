@@ -2302,7 +2302,7 @@ class PlayState extends MusicBeatState
 		if(ret != FunkinLua.Function_Stop && !transitioning)
 		{
 			#if !switch
-			var percent:Float = ratingPercent;
+			var percent:Float = CoolUtil.floorDecimal(ratingPercent * 100, 2);
 			if(Math.isNaN(percent)) percent = 0;
 			Highscore.saveScore(SONG.song, songScore, storyDifficulty, percent);
 			#end
