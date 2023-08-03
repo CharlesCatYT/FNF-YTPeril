@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				104,
+				-6
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				199,
+				-17
+			],
+			"anim": "singLEFT",
+			"fps": 150,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				102,
+				-27
+			],
+			"anim": "singDOWN",
+			"fps": 150,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				126,
+				-25
+			],
+			"anim": "singUP",
+			"fps": 150,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				86,
+				-22
+			],
+			"anim": "singRIGHT",
+			"fps": 150,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Acorn_Assets",
+	"position": [
+		0,
+		170
+	],
+	"healthicon": "acorn",
+	"flip_x": true,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		-30,
+		30
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}
