@@ -52,7 +52,7 @@ class HScript extends SScript
 		if (file == null)
 			file = '';
 	
-		super(file, false, false);
+		super(file, false);
 		parentLua = parent;
 		if (parent != null)
 			origin = parent.scriptName;
