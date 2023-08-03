@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="mrsmart_NEW.png">
+<SubTexture name="MrSmart idle0000" x="1315" y="0" width="284" height="575" frameX="-28" frameY="-21" frameWidth="320" frameHeight="596" />
+<SubTexture name="MrSmart idle0001" x="852" y="648" width="284" height="586" frameX="-19" frameY="-10" frameWidth="320" frameHeight="596" />
+<SubTexture name="MrSmart idle0002" x="0" y="648" width="284" height="596" frameX="-12" frameY="0" frameWidth="320" frameHeight="596" />
+<SubTexture name="MrSmart left0000" x="568" y="648" width="284" height="592" frameX="-19" frameY="0" frameWidth="320" frameHeight="592" />
+<SubTexture name="MrSmart left0001" x="284" y="648" width="284" height="592" frameX="-25" frameY="0" frameWidth="320" frameHeight="592" />
+<SubTexture name="MrSmart right0000" x="1009" y="0" width="306" height="600" frameX="-14" frameY="0" frameWidth="320" frameHeight="600" />
+<SubTexture name="MrSmart right0001" x="703" y="0" width="306" height="600" frameX="-8" frameY="0" frameWidth="320" frameHeight="600" />
+<SubTexture name="MrSmart up0000" x="0" y="0" width="334" height="648" frameX="-36" frameY="0" frameWidth="400" frameHeight="648" />
+<SubTexture name="MrSmart up0001" x="334" y="0" width="369" height="632" frameX="-31" frameY="-16" frameWidth="400" frameHeight="648" />
+<SubTexture name="MrSmart down0000" x="0" y="1244" width="407" height="532" frameX="-2" frameY="-13" frameWidth="415" frameHeight="545" />
+<SubTexture name="MrSmart down0001" x="1599" y="0" width="386" height="545" frameX="-8" frameY="0" frameWidth="415" frameHeight="545" />
+</TextureAtlas>

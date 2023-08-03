@@ -23,11 +23,10 @@ same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, 
 ## Credits:
 * Shadow Mario - Programmer
 * RiverOaken - Artist
-* Yoshubs - Assistant Programmer
 
 ### Special Thanks
+* Yoshubs/CubicYoshi - Ex-Programmer, New Input System
 * bbpanzu - Ex-Programmer
-* Yoshubs - New Input System
 * SqirraRNG - Crash Handler and Base code for Chart Editor's Waveform
 * KadeDev - Fixed some cool stuff on Chart Editor and other PRs
 * iFlicky - Composer of Psync and Tea Time, also made the Dialogue Sounds

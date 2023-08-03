@@ -1,0 +1,273 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				-5
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "bf aumsum new down miss",
+			"indices": [],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-39,
+				9
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "bf aumsum new up miss",
+			"indices": [],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				4
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "bf aumsum new hey",
+			"indices": [],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				108,
+				0
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "bf aumsum new dead loop",
+			"indices": [],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				108,
+				0
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "bf aumsum new dead confirm",
+			"indices": [],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				108,
+				0
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "bf aumsum new dies",
+			"indices": [],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				-5
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "bf aumsum new down",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-39,
+				9
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "bf aumsum new up",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			],
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"offsets": [
+				-34,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop_point": 0,
+			"indices": [],
+			"name": "bf aumsum new left miss",
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"offsets": [
+				78,
+				79
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop_point": 0,
+			"indices": [],
+			"name": "bf aumsum new right miss",
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"offsets": [
+				-37,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop_point": 0,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			],
+			"name": "bf aumsum new left",
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"offsets": [
+				84,
+				103
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop_point": 0,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			],
+			"name": "bf aumsum new right",
+			"image": "characters/bf_aumsum_newer"
+		},
+		{
+			"image": "characters/bf_aumsum_newer",
+			"offsets": [
+				-6,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "bf aumsum new idle"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/bf_aumsum_newer",
+	"position": [
+		0,
+		300
+	],
+	"healthicon": "bf-aumsum-new",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1.1
+}

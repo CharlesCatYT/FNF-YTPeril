@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-12,
+				0
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singUP",
+			"indices": [],
+			"name": "joey up",
+			"image": "characters/crazy_joey"
+		},
+		{
+			"offsets": [
+				-10,
+				-3
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "joey left",
+			"image": "characters/crazy_joey"
+		},
+		{
+			"offsets": [
+				-45,
+				-6
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "joey down",
+			"image": "characters/crazy_joey"
+		},
+		{
+			"offsets": [
+				19,
+				0
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "joey right",
+			"image": "characters/crazy_joey"
+		},
+		{
+			"image": "characters/crazy_joey",
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 30,
+			"anim": "idle",
+			"loop": false,
+			"name": "joey idle"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/crazy_joey",
+	"position": [
+		130,
+		220
+	],
+	"healthicon": "joey",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		119,
+		0
+	],
+	"camera_position": [
+		-40,
+		-20
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

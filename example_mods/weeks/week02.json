@@ -1,0 +1,41 @@
+{
+	"songs": [
+		[
+			"Hazardous",
+			"arnold",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"Finger Cut",
+			"fasttoon",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "arnold",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Meet Arnold, GF and BF",
+	"weekName": "Meet Arnold",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

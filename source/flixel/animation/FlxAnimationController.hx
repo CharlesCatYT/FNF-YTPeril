@@ -43,9 +43,9 @@ class FlxAnimationController implements IFlxDestroyable
 	public var numFrames(get, never):Int;
 
 	/**
-	* The total number of frames in this image.
-	* WARNING: assumes each row in the sprite sheet is full!
-	*/
+	 * The total number of frames in this image.
+	 * WARNING: assumes each row in the sprite sheet is full!
+	 */
 	@:deprecated("frames is deprecated, use numFrames")
 	public var frames(get, never):Int;
 
@@ -94,6 +94,7 @@ class FlxAnimationController implements IFlxDestroyable
 	}
 
 	public static var globalSpeed:Float = 1;
+
 	public var followGlobalSpeed:Bool = true;
 
 	public function update(elapsed:Float):Void

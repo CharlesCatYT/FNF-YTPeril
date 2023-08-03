@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"Extraterrestrial",
+			"moon",
+			[
+				60,
+				60,
+				60
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "unusualplanets",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Why is BF in the Solar System?",
+	"weekName": "Unusual Planets",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

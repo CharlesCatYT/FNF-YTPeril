@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-7,
+				8
+			],
+			"loop": false,
+			"fps": 50,
+			"anim": "singUP",
+			"indices": [],
+			"name": "bf cart up",
+			"image": "characters/bf_chivi_cart"
+		},
+		{
+			"offsets": [
+				-7,
+				2
+			],
+			"loop": false,
+			"fps": 50,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "bf cart left",
+			"image": "characters/bf_chivi_cart"
+		},
+		{
+			"offsets": [
+				-7,
+				-16
+			],
+			"loop": false,
+			"fps": 50,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "bf cart down",
+			"image": "characters/bf_chivi_cart"
+		},
+		{
+			"offsets": [
+				-7,
+				-1
+			],
+			"loop": false,
+			"fps": 50,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "bf cart right",
+			"image": "characters/bf_chivi_cart"
+		},
+		{
+			"image": "characters/bf_chivi_cart",
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 40,
+			"anim": "idle",
+			"loop": false,
+			"name": "bf cart idle"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/bf_chivi_cart",
+	"position": [
+		50,
+		220
+	],
+	"healthicon": "bf-chivi",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		-340,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

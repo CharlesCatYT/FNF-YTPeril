@@ -36,10 +36,7 @@ class DiscordClient
 		{
 			DiscordRpc.process();
 			sleep(2);
-			//trace('Discord Client Update $localID');
 		}
-
-		//DiscordRpc.shutdown();
 	}
 
 	public static function check()
@@ -137,7 +134,6 @@ class DiscordClient
 		if(pack != null && pack.discordRPC != null && pack.discordRPC != clientID)
 		{
 			clientID = pack.discordRPC;
-			//trace('Changing clientID! $clientID, $_defaultID');
 		}
 	}
 	#end

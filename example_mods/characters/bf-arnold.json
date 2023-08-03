@@ -1,0 +1,137 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				3,
+				0
+			],
+			"loop": false,
+			"fps": 13,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Arnold_BF Left",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"loop": false,
+			"fps": 13,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Arnold_BF Down",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				2,
+				0
+			],
+			"loop": false,
+			"fps": 13,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Arnold_BF Up",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"loop": false,
+			"fps": 13,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Arnold_BF Right",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 13,
+			"anim": "idle",
+			"indices": [],
+			"name": "Arnold_BF Idle",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				-1,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Arnold_BF MissD",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				3,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Arnold_BF MissR",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				1,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "Arnold_BF MissL",
+			"image": "characters/Arnold_BF"
+		},
+		{
+			"offsets": [
+				3,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "Arnold_BF MissU",
+			"image": "characters/Arnold_BF"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/Arnold_BF",
+	"position": [
+		-340,
+		-200
+	],
+	"healthicon": "bf-arnold",
+	"flip_x": true,
+	"healthbar_colors": [
+		125,
+		179,
+		255
+	],
+	"camera_position": [
+		90,
+		60
+	],
+	"sing_duration": 4,
+	"scale": 0.5
+}

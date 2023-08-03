@@ -33,7 +33,6 @@ class NoteSplash extends FlxSprite
 		precacheConfig(skin);
 		_configLoaded = skin;
 		scrollFactor.set();
-		//setupNoteSplash(x, y, 0);
 	}
 
 	override function destroy()
@@ -86,7 +85,6 @@ class NoteSplash extends FlxSprite
 		if(config != null)
 		{
 			var animID:Int = direction + ((animNum - 1) * Note.colArray.length);
-			//trace('anim: ${animation.curAnim.name}, $animID');
 			var offs:Array<Float> = config.offsets[FlxMath.wrap(animID, 0, config.offsets.length-1)];
 			offset.x += offs[0];
 			offset.y += offs[1];

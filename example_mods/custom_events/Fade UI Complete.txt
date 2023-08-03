@@ -1,0 +1,8 @@
+Value 1: (0 = All Notes Out) (1 = All Notes In)
+         (2 = Opp Notes Out) (3 = Opp Notes In)
+         (4 = Plr Notes Out) (5 = Plr Notes In)
+         (6 = UI Out) (7 = UI In) (8 = Health Out) (9 = Health In)
+         (10 = Timer Out) (11 = Timer In) (12 = All Out) (13 = All In)
+
+Value 2: How long it takes
+         (Timer will have to be set to 0.5 or more to function)

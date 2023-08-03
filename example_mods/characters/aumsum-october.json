@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-17,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "aumsum october left",
+			"indices": [],
+			"image": "characters/aumsum_october_2022"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				-25
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "aumsum october down",
+			"indices": [],
+			"image": "characters/aumsum_october_2022"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				14
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "aumsum october up",
+			"indices": [],
+			"image": "characters/aumsum_october_2022"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-74,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "aumsum october right",
+			"indices": [],
+			"image": "characters/aumsum_october_2022"
+		},
+		{
+			"image": "characters/aumsum_october_2022",
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "idle",
+			"loop": false,
+			"name": "aumsum october idle"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/aumsum_october_2022",
+	"position": [
+		0,
+		150
+	],
+	"healthicon": "aumsum",
+	"flip_x": false,
+	"healthbar_colors": [
+		46,
+		46,
+		46
+	],
+	"camera_position": [
+		20,
+		-40
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

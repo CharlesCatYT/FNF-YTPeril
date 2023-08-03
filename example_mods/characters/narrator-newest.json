@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "idle",
+			"indices": [],
+			"name": "aumsum narrator idle"
+		},
+		{
+			"offsets": [
+				50,
+				28
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singUP",
+			"indices": [],
+			"name": "aumsum narrator up"
+		},
+		{
+			"offsets": [
+				64,
+				-1
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "aumsum narrator right"
+		},
+		{
+			"offsets": [
+				38,
+				-3
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "aumsum narrator down"
+		},
+		{
+			"offsets": [
+				40,
+				2
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "aumsum narrator left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/narrator_NEWEST",
+	"position": [
+		100,
+		90
+	],
+	"healthicon": "narrator",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		8,
+		0
+	],
+	"camera_position": [
+		-20,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

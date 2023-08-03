@@ -1,3 +1,4 @@
+package;
 
 //Discord API
 #if desktop

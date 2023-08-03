@@ -18,7 +18,7 @@ class OutdatedState extends MusicBeatState
 			please update to " + TitleState.updateVersion + "!\n
 			Press ESCAPE to proceed anyway.\n
 			\n
-			Thank you for using the Engine!",
+			Thank you for playing the mod!",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);

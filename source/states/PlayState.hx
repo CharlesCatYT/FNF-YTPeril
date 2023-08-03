@@ -1635,16 +1635,53 @@ class PlayState extends MusicBeatState
 		iconP2.updateHitbox();
 
 		var iconOffset:Int = 26;
-		if (healthBar.bounds.max != null) {
-			if (health > healthBar.bounds.max) health = healthBar.bounds.max;
-		} else {
+		if (healthBar.bounds.max != null)
+		{
+			if (health > healthBar.bounds.max)
+				health = healthBar.bounds.max;
+		}
+		else
+		{
 			// Old system for safety?? idk
-			if (health > 2) health = 2;
+			if (health > 2)
+				health = 2;
 		}
 		iconP1.x = healthBar.barCenter + (150 * iconP1.scale.x - 150) / 2 - iconOffset;
 		iconP2.x = healthBar.barCenter - (150 * iconP2.scale.x) / 2 - iconOffset * 2;
-		iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
-		iconP2.animation.curAnim.curFrame = (healthBar.percent > 80) ? 1 : 0;
+		if (iconP1.animation.frames == 3)
+		{
+			if (healthBar.percent < 20)
+				iconP1.animation.curAnim.curFrame = 1;
+			else if (healthBar.percent > 80)
+				iconP1.animation.curAnim.curFrame = 2;
+			else
+				iconP1.animation.curAnim.curFrame = 0;
+		}
+		else
+		{
+			if (healthBar.percent < 20)
+				iconP1.animation.curAnim.curFrame = 1;
+			else
+				iconP1.animation.curAnim.curFrame = 0;
+		}
+		if (iconP2.animation.frames == 3)
+		{
+			if (healthBar.percent > 80)
+				iconP2.animation.curAnim.curFrame = 1;
+			else if (healthBar.percent < 20)
+				iconP2.animation.curAnim.curFrame = 2;
+			else
+				iconP2.animation.curAnim.curFrame = 0;
+		}
+		else
+		{
+			if (healthBar.percent > 80)
+				iconP2.animation.curAnim.curFrame = 1;
+			else
+				iconP2.animation.curAnim.curFrame = 0;
+		}
+		/*iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
+		iconP2.animation.curAnim.curFrame = (healthBar.percent > 80) ? 1 : 0; */
 
 		if (controls.justPressed('debug_2') && !endingSong && !inCutscene)
 			openCharacterEditor();

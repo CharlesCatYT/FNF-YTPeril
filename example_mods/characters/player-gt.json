@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				18,
+				8
+			],
+			"loop": false,
+			"fps": 32,
+			"anim": "singLEFT",
+			"image": "characters/Gametoons_Player",
+			"indices": [],
+			"name": "Player left"
+		},
+		{
+			"offsets": [
+				-10,
+				11
+			],
+			"loop": false,
+			"fps": 32,
+			"anim": "singRIGHT",
+			"image": "characters/Gametoons_Player",
+			"indices": [],
+			"name": "Player right"
+		},
+		{
+			"offsets": [
+				3,
+				-3
+			],
+			"loop": false,
+			"fps": 32,
+			"anim": "singDOWN",
+			"image": "characters/Gametoons_Player",
+			"indices": [],
+			"name": "Player down"
+		},
+		{
+			"offsets": [
+				39,
+				71
+			],
+			"loop": false,
+			"fps": 32,
+			"anim": "singUP",
+			"image": "characters/Gametoons_Player",
+			"indices": [],
+			"name": "Player up"
+		},
+		{
+			"image": "characters/Gametoons_Player",
+			"offsets": [
+				-5,
+				0
+			],
+			"indices": [],
+			"fps": 32,
+			"anim": "idle",
+			"loop": false,
+			"name": "Player idle"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/Gametoons_Player",
+	"position": [
+		-100,
+		170
+	],
+	"healthicon": "player",
+	"flip_x": false,
+	"healthbar_colors": [
+		198,
+		37,
+		40
+	],
+	"camera_position": [
+		150,
+		180
+	],
+	"sing_duration": 4,
+	"scale": 0.6
+}

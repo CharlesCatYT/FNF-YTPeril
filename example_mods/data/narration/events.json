@@ -1,0 +1,201 @@
+{
+	"song": {
+		"events": [
+			[
+				38000,
+				[
+					[
+						"Character Camera Zoom",
+						"1.2",
+						""
+					]
+				]
+			],
+			[
+				38400,
+				[
+					[
+						"Flash Camera",
+						"0.3",
+						""
+					],
+					[
+						"Character Camera Zoom",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				65600,
+				[
+					[
+						"Character Camera Zoom",
+						"",
+						"1.4"
+					]
+				]
+			],
+			[
+				67200,
+				[
+					[
+						"Character Camera Zoom",
+						"",
+						"1"
+					]
+				]
+			],
+			[
+				68800,
+				[
+					[
+						"Character Camera Zoom",
+						"",
+						"1.4  "
+					]
+				]
+			],
+			[
+				70400,
+				[
+					[
+						"Character Camera Zoom",
+						"",
+						"1"
+					]
+				]
+			],
+			[
+				72000,
+				[
+					[
+						"Character Camera Zoom",
+						"1.4",
+						""
+					]
+				]
+			],
+			[
+				73600,
+				[
+					[
+						"Character Camera Zoom",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				75200,
+				[
+					[
+						"Character Camera Zoom",
+						"1.4",
+						""
+					]
+				]
+			],
+			[
+				90400,
+				[
+					[
+						"Character Camera Zoom",
+						"1.6",
+						""
+					]
+				]
+			],
+			[
+				91200,
+				[
+					[
+						"Character Camera Zoom",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				103600,
+				[
+					[
+						"Character Camera Zoom",
+						"1.2",
+						""
+					]
+				]
+			],
+			[
+				104000,
+				[
+					[
+						"Character Camera Zoom",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				116800,
+				[
+					[
+						"Character Camera Zoom",
+						"  ",
+						"1.5"
+					]
+				]
+			],
+			[
+				118400,
+				[
+					[
+						"Character Camera Zoom",
+						"  ",
+						"1"
+					]
+				]
+			],
+			[
+				120000,
+				[
+					[
+						"Character Camera Zoom",
+						"1.5",
+						""
+					]
+				]
+			],
+			[
+				121600,
+				[
+					[
+						"Character Camera Zoom",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				122800,
+				[
+					[
+						"Character Camera Zoom",
+						"1.2",
+						""
+					]
+				]
+			],
+			[
+				129000,
+				[
+					[
+						"Character Camera Zoom",
+						"1",
+						""
+					]
+				]
+			]
+		]
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				84,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "aumsum newest left",
+			"image": "characters/aumsum_newest"
+		},
+		{
+			"offsets": [
+				11,
+				-25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "aumsum newest down",
+			"image": "characters/aumsum_newest"
+		},
+		{
+			"offsets": [
+				106,
+				14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "aumsum newest up",
+			"image": "characters/aumsum_newest"
+		},
+		{
+			"offsets": [
+				31,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "aumsum newest right",
+			"image": "characters/aumsum_newest"
+		},
+		{
+			"image": "characters/aumsum_newest",
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "aumsum newest idle"
+		}
+	],
+	"no_antialiasing": false,
+	"gameover_properties": [
+		"bf-dead",
+		"fnf_loss_sfx",
+		"gameOver",
+		"gameOverEnd"
+	],
+	"image": "characters/aumsum_newest",
+	"position": [
+		0,
+		210
+	],
+	"healthicon": "aumsum",
+	"flip_x": false,
+	"healthbar_colors": [
+		46,
+		46,
+		46
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

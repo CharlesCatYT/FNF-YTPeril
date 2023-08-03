@@ -15,6 +15,7 @@ import options.OptionsState;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.7.1h'; //This is also used for Discord RPC
+	public static var ytPerilVersion:String = '1.0 DEMO'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -26,7 +27,7 @@ class MainMenuState extends MusicBeatState
 		#if MODS_ALLOWED 'mods', #end
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		#if !switch 'donate', #end
+		'discord',
 		'options'
 	];
 
@@ -105,6 +106,10 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollow, null, 0);
 
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "YouTube Animation Peril v" + ytPerilVersion, 12);
+		versionShit.scrollFactor.set();
+		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(versionShit);
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -168,7 +173,7 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				if (optionShit[curSelected] == 'donate')
+				if (optionShit[curSelected] == 'discord')
 				{
 					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
 				}

@@ -1,0 +1,50 @@
+{
+	"storyName": "It's AumSum Time!",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "aumsum",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Scientifical",
+			"aumsum",
+			[
+				20,
+				20,
+				20
+			]
+		],
+		[
+			"Narration",
+			"narrator",
+			[
+				135,
+				0,
+				0
+			]
+		],
+		[
+			"Crazy",
+			"joey",
+			[
+				195,
+				139,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "AumSum Week"
+}

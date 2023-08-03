@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="BFPencil.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BF Pencil Idle0000" x="0" y="0" width="422" height="460" pivotX="-3.5" pivotY="0"/>
+	<SubTexture name="BF Pencil Idle0001" x="0" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0002" x="422" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0003" x="422" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0004" x="844" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0005" x="844" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0006" x="1266" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0007" x="1266" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0008" x="1688" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0009" x="1688" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0010" x="1688" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0011" x="1688" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0012" x="1688" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil Idle0013" x="1688" y="0" width="422" height="460"/>
+	<SubTexture name="BF Pencil down0000" x="2110" y="0" width="415" height="462" pivotX="14.5" pivotY="-41.95"/>
+	<SubTexture name="BF Pencil down0001" x="2110" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down0002" x="2525" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down0003" x="2525" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down0004" x="2940" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down0005" x="2940" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down0006" x="2940" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down0007" x="2940" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down0008" x="2940" y="0" width="415" height="462"/>
+	<SubTexture name="BF Pencil down miss0000" x="3355" y="0" width="414" height="430" pivotX="13.25" pivotY="-73.85"/>
+	<SubTexture name="BF Pencil down miss0001" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil down miss0002" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil down miss0003" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil down miss0004" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil down miss0005" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil down miss0006" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil down miss0007" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil down miss0008" x="0" y="462" width="414" height="430"/>
+	<SubTexture name="BF Pencil left0000" x="414" y="462" width="441" height="473" pivotX="19" pivotY="13.95"/>
+	<SubTexture name="BF Pencil left0001" x="414" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left0002" x="855" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left0003" x="855" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left0004" x="1296" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left0005" x="1296" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left0006" x="1296" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left0007" x="1296" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left0008" x="1296" y="462" width="441" height="473"/>
+	<SubTexture name="BF Pencil left miss0000" x="1737" y="462" width="411" height="483" pivotX="19" pivotY="16.7"/>
+	<SubTexture name="BF Pencil left miss0001" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil left miss0002" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil left miss0003" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil left miss0004" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil left miss0005" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil left miss0006" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil left miss0007" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil left miss0008" x="2148" y="462" width="411" height="483"/>
+	<SubTexture name="BF Pencil right0000" x="2559" y="462" width="441" height="458" pivotX="-78.75" pivotY="-17.65"/>
+	<SubTexture name="BF Pencil right0001" x="2559" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right0002" x="3000" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right0003" x="3000" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right0004" x="3441" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right0005" x="3441" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right0006" x="3441" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right0007" x="3441" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right0008" x="3441" y="462" width="441" height="458"/>
+	<SubTexture name="BF Pencil right miss0000" x="0" y="945" width="430" height="472" pivotX="-89.5" pivotY="-17.3"/>
+	<SubTexture name="BF Pencil right miss0001" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil right miss0002" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil right miss0003" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil right miss0004" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil right miss0005" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil right miss0006" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil right miss0007" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil right miss0008" x="430" y="945" width="430" height="472"/>
+	<SubTexture name="BF Pencil up0000" x="860" y="945" width="413" height="559" pivotX="-89.3" pivotY="93.45"/>
+	<SubTexture name="BF Pencil up0001" x="860" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up0002" x="1273" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up0003" x="1273" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up0004" x="1686" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up0005" x="1686" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up0006" x="1686" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up0007" x="1686" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up0008" x="1686" y="945" width="413" height="559"/>
+	<SubTexture name="BF Pencil up miss0000" x="2099" y="945" width="388" height="558" pivotX="-101.1" pivotY="93.45"/>
+	<SubTexture name="BF Pencil up miss0001" x="2487" y="945" width="388" height="558"/>
+	<SubTexture name="BF Pencil up miss0002" x="2487" y="945" width="388" height="558"/>
+	<SubTexture name="BF Pencil up miss0003" x="2487" y="945" width="388" height="558"/>
+	<SubTexture name="BF Pencil up miss0004" x="2487" y="945" width="388" height="558"/>
+	<SubTexture name="BF Pencil up miss0005" x="2487" y="945" width="388" height="558"/>
+	<SubTexture name="BF Pencil up miss0006" x="2487" y="945" width="388" height="558"/>
+	<SubTexture name="BF Pencil up miss0007" x="2487" y="945" width="388" height="558"/>
+	<SubTexture name="BF Pencil up miss0008" x="2487" y="945" width="388" height="558"/>
+</TextureAtlas>
