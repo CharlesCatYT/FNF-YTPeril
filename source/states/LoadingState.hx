@@ -101,7 +101,8 @@ class LoadingState extends MusicBeatState
 		{
 			@:privateAccess
 			if (!LimeAssets.libraryPaths.exists(library))
-				throw new haxe.Exception("Missing library: " + library);
+				// throw new haxe.Exception("Missing library: " + library);
+				throw "Missing library: " + library;
 
 			var callback = callbacks.add("library:" + library);
 			Assets.loadLibrary(library).onComplete(function(_)
@@ -164,7 +165,7 @@ class LoadingState extends MusicBeatState
 		Paths.setCurrentLevel(directory);
 		trace('Setting asset folder to ' + directory);
 
-		#if LOADING_SCREEN
+		// #if LOADING_SCREEN
 		var loaded:Bool = false;
 		if (PlayState.SONG != null)
 		{
@@ -176,14 +177,14 @@ class LoadingState extends MusicBeatState
 
 		if (!loaded)
 			return new LoadingState(target, stopMusic, directory);
-		#end
+		// #end
 		if (stopMusic && FlxG.sound.music != null)
 			FlxG.sound.music.stop();
 
 		return target;
 	}
 
-	#if LOADING_SCREEN
+	// #if LOADING_SCREEN
 	static function isSoundLoaded(path:String):Bool
 	{
 		trace(path);
@@ -194,7 +195,8 @@ class LoadingState extends MusicBeatState
 	{
 		return Assets.getLibrary(library) != null;
 	}
-	#end
+
+	// #end
 
 	override function destroy()
 	{
