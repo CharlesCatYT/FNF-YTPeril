@@ -29,6 +29,9 @@ typedef TitleData =
 	starty:Float,
 	gfx:Float,
 	gfy:Float,
+	gfscalex:Float,
+	gfscaley:Float,
+	gfantialiasing:Bool,
 	backgroundSprite:String,
 	bpm:Int
 }
@@ -66,11 +69,13 @@ class TitleState extends MusicBeatState
 
 	public static var updateVersion:String = '';
 
-	static function clearTemps(dir:String){
+	static function clearTemps(dir:String)
+	{
 		#if desktop
-		for(file in FileSystem.readDirectory(dir)){
+		for (file in FileSystem.readDirectory(dir))
+		{
 			var file = './$dir/$file';
-			if(FileSystem.isDirectory(file))
+			if (FileSystem.isDirectory(file))
 				clearTemps(file);
 			else if (file.endsWith(".tempcopy"))
 				FileSystem.deleteFile(file);
@@ -241,7 +246,8 @@ class TitleState extends MusicBeatState
 		if (ClientPrefs.data.shaders)
 			swagShader = new ColorSwap();
 		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
-		gfDance.antialiasing = ClientPrefs.data.antialiasing;
+		gfDance.scale.set(titleJSON.gfscalex, titleJSON.gfscaley);
+		gfDance.antialiasing = titleJSON.gfantialiasing;
 
 		var easterEgg:String = FlxG.save.data.psychDevsEasterEgg;
 		if (easterEgg == null)
@@ -384,6 +390,15 @@ class TitleState extends MusicBeatState
 
 		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER || controls.ACCEPT;
 
+		if (FlxG.keys.justPressed.ESCAPE && !pressedEnter)
+		{
+			FlxG.sound.music.fadeOut(0.3);
+			FlxG.camera.fade(FlxColor.BLACK, 0.5, false, function()
+			{
+				Sys.exit(0);
+			}, false);
+		}
+
 		#if mobile
 		for (touch in FlxG.touches.list)
 		{
@@ -432,11 +447,12 @@ class TitleState extends MusicBeatState
 
 			if (pressedEnter)
 			{
-				titleText.color = FlxColor.WHITE;
-				titleText.alpha = 1;
-
 				if (titleText != null)
+				{
+					titleText.color = FlxColor.WHITE;
+					titleText.alpha = 1;
 					titleText.animation.play('press');
+				};
 
 				FlxG.camera.flash(ClientPrefs.data.flashing ? FlxColor.WHITE : 0x4CFFFFFF, 1);
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);

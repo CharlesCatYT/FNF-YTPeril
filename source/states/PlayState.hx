@@ -153,6 +153,8 @@ class PlayState extends MusicBeatState
 	public var unspawnNotes:Array<Note> = [];
 	public var eventNotes:Array<EventNote> = [];
 
+	public var lane:FlxSprite;
+
 	public var camFollow:FlxObject;
 
 	private static var prevCamFollow:FlxObject;
@@ -483,6 +485,18 @@ class PlayState extends MusicBeatState
 		add(comboGroup);
 		uiGroup = new FlxSpriteGroup();
 		add(uiGroup);
+
+		if (ClientPrefs.data.laneUnderlay > 0)
+		{
+			for (i in 0...2)
+			{
+				lane = new FlxSprite(42 + 50 + (FlxG.width / 2 * i) - 10, 0).makeGraphic(Std.int(42 + Note.swagWidth * 3 + 90), FlxG.height);
+				lane.color = FlxColor.BLACK;
+				lane.alpha = ClientPrefs.data.laneUnderlay;
+				uiGroup.add(lane);
+				lane.cameras = [camHUD];
+			}
+		}
 
 		Conductor.songPosition = -5000 / Conductor.songPosition;
 		var showTime:Bool = (ClientPrefs.data.timeBarType != 'Disabled');
@@ -2063,10 +2077,10 @@ class PlayState extends MusicBeatState
 					timer.active = true;
 				}
 				#end
-				openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0],
-					boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollow.x, camFollow.y));
-
-				// MusicBeatState.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
+				if (!ClientPrefs.data.instantRespawn)
+					openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0], boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollowPos.x, camFollowPos.y));
+				else
+					MusicBeatState.resetState();
 
 				#if desktop
 				// Game Over doesn't get his own variable because it's only used here
@@ -3104,6 +3118,8 @@ class PlayState extends MusicBeatState
 
 	function opponentNoteHit(note:Note):Void
 	{
+		health -= ClientPrefs.data.healthDrainValue;
+
 		if (Paths.formatToSongPath(SONG.song) != 'tutorial')
 			camZooming = true;
 

@@ -1,10 +1,13 @@
-{	
-	"titlex":163.5,
-	"titley":-30,
-	"startx":125,
-	"starty":576,
-	"gfx":1000,
-	"gfy":1000,
-	"backgroundSprite":"YT-BG",
-	"bpm":102
+{
+  "titlex": 163.5,
+  "titley": -30,
+  "startx": 125,
+  "starty": 576,
+  "gfx": 1000,
+  "gfy": 1000,
+  "gfscalex": 1,
+  "gfscaley": 1,
+  "gfantialiasing": true,
+  "backgroundSprite": "YT-BG",
+  "bpm": 102
 }

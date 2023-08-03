@@ -13,12 +13,15 @@ class SaveVariables
 	public var opponentStrums:Bool = true;
 	public var showFPS:Bool = true;
 	public var flashing:Bool = true;
+	public var laneUnderlay:Float = 0;
+	public var instantRespawn:Bool = false;
 	public var autoPause:Bool = true;
 	public var antialiasing:Bool = true;
 	public var noteSkin:String = 'Default';
 	public var splashSkin:String = 'Psych';
 	public var splashAlpha:Float = 0.6;
 	public var lowQuality:Bool = false;
+	public var fpsRainbow:Bool = false; // kade
 	public var shaders:Bool = true;
 	public var cacheOnGPU:Bool = #if !switch false #else true #end; // From Stilic
 	public var framerate:Int = 60;
@@ -43,6 +46,7 @@ class SaveVariables
 	public var scoreZoom:Bool = true;
 	public var noReset:Bool = false;
 	public var healthBarAlpha:Float = 1;
+	public var healthDrainValue:Float = 0.023; // how much health you gain, so it should be a fair fight
 	public var hitsoundVolume:Float = 0;
 	public var pauseMusic:String = 'Brisky Buffet';
 	public var checkForUpdates:Bool = true;
