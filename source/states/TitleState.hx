@@ -66,10 +66,24 @@ class TitleState extends MusicBeatState
 
 	public static var updateVersion:String = '';
 
+	static function clearTemps(dir:String){
+		#if desktop
+		for(file in FileSystem.readDirectory(dir)){
+			var file = './$dir/$file';
+			if(FileSystem.isDirectory(file))
+				clearTemps(file);
+			else if (file.endsWith(".tempcopy"))
+				FileSystem.deleteFile(file);
+		}
+		#end
+	}
+
 	override public function create():Void
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
+
+		clearTemps("./");
 
 		#if LUA_ALLOWED
 		Mods.pushGlobalMods();
