@@ -2078,7 +2078,8 @@ class PlayState extends MusicBeatState
 				}
 				#end
 				if (!ClientPrefs.data.instantRespawn)
-					openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0], boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollowPos.x, camFollowPos.y));
+					openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0],
+						boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollow.x, camFollow.y));
 				else
 					MusicBeatState.resetState();
 
