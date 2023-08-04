@@ -1,6 +1,7 @@
 Main Credits
 CharlesCatYT::unknown::Main Programmer and Director of the Mod::https://github.com/ShadowMilky::D2D2D2
 Isaiah Mods::isaiah::Co-Director::::2F409E
+01Soap::grits::Programmer::::2F409E
 Vencerist::scientist::Composer, Artist, Animator::::FFFFFF
 Kimb.MP4::kimb::Artist, Animator, Composer, Charter::::29B300
 TheAnimateMan::animate::Artist, Animator, Composer, Charter::::FF3333
