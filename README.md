@@ -1,12 +1,15 @@
-# Friday Night Funkin' - Psych Engine
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+# Friday Night Funkin' - YouTube Animation Peril
+Slightly unoptimized due to the formatting, but whatever.
+
+Anyway, let me tell ya the context/story.
+One day, BF and GF were bored and decided to go search up animations on YouTube. But with BF being a stupido and with cartoon logic, on that one particular day, BF spilled his drink on the computer and both BF and GF got sucked into YT and then wake up somewhere unfamiliar. (Wow like they haven't been too unfamiliar places millions of times before.) Then, they realized they were in the animations that they were searching up on YT. Now, BF has to challenge rap battles for whoever they face in these YT Animations. The only thing you can ask is, will BF be able to survive in all of these animations? We may never find out.
 
 ## Installation:
 You must have [Haxe version 4.2.5](https://haxe.org/download/version/4.2.5/), seriously, stop using older or newer versions, it won't work!
 
 open up a Command Prompt/PowerShell or Terminal, type `haxelib install hmm`
 
-after it finishes, simply type `haxelib run hmm install` in order to install all the needed libraries for *Psych Engine!*
+A fter it finishes, simply type `haxelib run hmm install` in order to install all the needed libraries for *YouTube Animation Peril!*
 
 If the compiler gives an error saying that hxCodec cannot be found read this issue to fix it: ShadowMario/FNF-PsychEngine#12770
 
@@ -20,7 +23,10 @@ to start you off, disabling Videos should be simple, simply Delete the line `"VI
 
 same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, this and other customization options are all available within the `Project.xml` file
 
-## Credits:
+## YT Animation Peril Credits:
+THEYRE IN THE CREDITS.TXT IM TOO LAZY
+
+## Psych Credits:
 * Shadow Mario - Programmer
 * RiverOaken - Artist
 
@@ -33,7 +39,7 @@ same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, 
 * PolybiusProxy - .MP4 Video Loader Library (hxCodec)
 * Keoiki - Note Splash Animations
 * Smokey - Sprite Atlas Support
-* Nebula the Zorua - LUA JIT Fork and some Lua reworks
+* superpowers04 - LUA JIT Fork and some Lua reworks
 _____________________________________
 
 # Features
@@ -44,7 +50,7 @@ _____________________________________
 
 
 ## Mod Support
-* Probably one of the main points of this engine, you can code in .lua files outside of the source code, making your own weeks without even messing with the source!
+* Probably one of the main points of this engine, you can code in .lua and .hx files outside of the source code, making your own weeks without even messing with the source!
 * Comes with a Mod Organizing/Disabling Menu.
 
 
@@ -59,7 +65,7 @@ _____________________________________
   * Added a quick transition/cutscene to Monster
 ### Week 3:
   * BF does "Hey!" during Philly Nice
-  * Blammed has a cool new colors flash during that sick part of the song
+  * ~~Blammed has a cool new color flash during that sick part of the song~~
 ### Week 4:
   * Better hair physics for Mom/Boyfriend (Maybe even slightly better than Week 7's :eyes:)
   * Henchmen die during all songs. Yeah :(
@@ -85,6 +91,7 @@ _____________________________________
 ## Multiple editors to assist you in making your own Mod
 ![Screenshot_3](https://user-images.githubusercontent.com/44785097/144629914-1fe55999-2f18-4cc1-bc70-afe616d74ae5.png)
 * Working both for Source code modding and Downloaded builds!
+* Includes a debug menu for note splashes as well!
 
 ## Story mode menu rework:
 ![](https://i.imgur.com/UB2EKpV.png)
@@ -99,13 +106,13 @@ _____________________________________
 * The engine comes with 16 example achievements that you can mess with and learn how it works (Check Achievements.hx and search for "checkForAchievement" on PlayState.hx)
 
 ## Options menu:
-* You can change Note colors, Delay and Combo Offset, Controls and Preferences there.
- * On Preferences you can toggle Downscroll, Middlescroll, Anti-Aliasing, Framerate, Low Quality, Note Splashes, Flashing Lights, etc.
+* You can change Note colors, Delay and Combo Offset, Controls, and Preferences there.
+ * On Preferences, you can toggle Downscroll, Lane Underlay, Middlescroll, Anti-Aliasing, Framerate, Low Quality, Note Splashes, Flashing Lights, etc.
 
 ## Other gameplay features:
 * When the enemy hits a note, their strum note also glows.
 * Lag doesn't impact the camera movement and player icon scaling anymore.
 * Some stuff based on Week 7's changes has been put in (Background colors on Freeplay, Note splashes)
-* You can reset your Score on Freeplay/Story Mode by pressing Reset button.
-* You can listen to a song or adjust Scroll Speed/Damage taken/etc. on Freeplay by pressing Space.
+* You can reset your Week/Song score on Freeplay/Story Mode by pressing Reset(R) button.
+* You can listen to a song by pressing Space on freeplay or adjust Scroll Speed/Damage taken/etc. by pressing Ctrl.
 * You can enable "Combo Stacking" in Gameplay Options. This causes the combo sprites to just be one sprite with an animation rather than sprites spawning each note hit.
