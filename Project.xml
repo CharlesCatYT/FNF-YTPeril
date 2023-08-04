@@ -2,10 +2,10 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': YouTube Animation Peril" file="PsychYTPeril" packageName="com.shadowmario.psychengine" package="com.shadowmario.psychengine" main="Main" version="0.2.8" company="ShadowMario" />
+	<app title="Friday Night Funkin': YouTube Animation Peril" file="YouTubePeril" packageName="com.shadowmario.psychengine" package="com.shadowmario.psychengine" main="Main" version="0.2.8" company="ShadowMario" />
 
 	<!-- NOTE TO SELF: DISABLE THIS IF ISSUES ARE FOUND -->
-	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
+	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas - PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
@@ -163,8 +163,16 @@
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
 	
+	<icon path="art/icon1.png" size='1'/>
+	<icon path="art/icon2.png" size='2'/>
+	<icon path="art/icon4.png" size='4'/>
+	<icon path="art/icon8.png" size='8'/>
 	<icon path="art/icon16.png" size='16'/>
+	<icon path="art/icon24.png" size='24'/>
 	<icon path="art/icon32.png" size='32'/>
+	<icon path="art/icon48.png" size='48'/>
 	<icon path="art/icon64.png" size='64'/>
+	<icon path="art/icon128.png" size='128'/>
+	<icon path="art/icon256.png" size='256'/>
 	<icon path="art/iconOG.png" />
 </project>
