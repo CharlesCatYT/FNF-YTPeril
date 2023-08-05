@@ -35,7 +35,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		var option:Option = new Option('Disable Reset Button', "If checked, pressing Reset won't do anything.", 'noReset', 'bool');
 		addOption(option);
 
-		var option:Option = new Option('Health Drain value', 'Changes how much health the opponent drains when they sing.', 'healthDrainValue', 'float');
+		var option:Option = new Option('Health Drain', 'Changes how much health the opponent drains when they sing.', 'healthDrainValue', 'float');
+		option.displayFormat = '%vms';
 		option.scrollSpeed = 0.1;
 		option.minValue = 0;
 		option.maxValue = 0.05;
