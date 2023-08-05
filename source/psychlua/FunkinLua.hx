@@ -181,6 +181,9 @@ class FunkinLua
 		set('scriptName', scriptName);
 		set('currentModDirectory', Mods.currentModDirectory);
 
+		set('euler', CoolUtil.EULER);
+		set('gamma', CoolUtil.GAMMA);
+
 		// Noteskin/Splash
 		set('noteSkin', ClientPrefs.data.noteSkin);
 		set('noteSkinPostfix', Note.getNoteSkinPostfix());
@@ -1769,10 +1772,11 @@ class FunkinLua
 		}
 		trace('lua file loaded succesfully:' + scriptName);
 
-		Lua_helper.add_callback(lua, "getGameplayChangerValue", function(tag:String) {
+		Lua_helper.add_callback(lua, "getGameplayChangerValue", function(tag:String)
+		{
 			return ClientPrefs.getGameplaySetting(tag, false);
 		});
-		
+
 		call('onCreate', []);
 		#end
 	}

@@ -40,6 +40,9 @@ import substates.GameOverSubstate;
 import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
 #end
+#if js
+import js.Browser;
+#end
 #if sys
 import sys.FileSystem;
 import sys.io.File;
@@ -900,7 +903,6 @@ class PlayState extends MusicBeatState
 		if (!OpenFlAssets.exists(filepath))
 		#end
 		{
-			FlxG.log.warn('Couldnt find video file: ' + name);
 			startAndEnd();
 			return;
 		}
@@ -925,7 +927,11 @@ class PlayState extends MusicBeatState
 		}
 		#end
 		#else
+		#if js
+		Browser.alert('Platform not supported!');
+		#else
 		FlxG.log.warn('Platform not supported!');
+		#end
 		startAndEnd();
 		return;
 		#end
@@ -980,7 +986,11 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
+			#if js
+			Browser.alert('Your dialogue file is badly formatted!');
+			#else
 			FlxG.log.warn('Your dialogue file is badly formatted!');
+			#end
 			startAndEnd();
 		}
 	}
@@ -2269,6 +2279,10 @@ class PlayState extends MusicBeatState
 						targetsArray[i].shake(intensity, duration);
 					}
 				}
+
+			case 'Change Icon':
+				iconP1.changeIcon(value1);
+				iconP2.changeIcon(value2);
 
 			case 'Change Character':
 				var charType:Int = 0;

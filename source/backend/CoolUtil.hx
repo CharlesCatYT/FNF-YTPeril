@@ -124,6 +124,16 @@ class CoolUtil
 		#end
 	}
 
+	/**
+		Specified by the constant, e. `Euler` is approximately `2.7182818284590452353602874713527`.
+	**/
+	public static var EULER(default, null):Float = 2.7182818284590452353602874713527;
+
+	/**
+		Specified by the constant, γ. `Gamma or Euler's constant` is approximately `0.5772156649015328606065120900824`.
+	**/
+	public static var GAMMA(default, null):Float = 0.5772156649015328606065120900824;
+
 	/** Quick Function to Fix Save Files for Flixel 5
 		if you are making a mod, you are gonna wanna change "ShadowMario" to something else
 		so Base Psych saves won't conflict with yours
