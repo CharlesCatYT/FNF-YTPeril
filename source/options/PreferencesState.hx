@@ -3,9 +3,9 @@ package options;
 import states.MainMenuState;
 import backend.StageData;
 
-class OptionsState extends MusicBeatState
+class PreferencesState extends MusicBeatState
 {
-	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Preferences'];
+	var options:Array<String> = ['Graphics', 'Visuals and UI', 'Gameplay', 'Misc'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 
 	private static var curSelected:Int = 0;
@@ -16,14 +16,14 @@ class OptionsState extends MusicBeatState
 	{
 		switch (label)
 		{
-			case 'Note Colors':
-				openSubState(new options.NotesSubState());
-			case 'Controls':
-				openSubState(new options.ControlsSubState());
-			case 'Preferences':
-				LoadingState.loadAndSwitchState(new PreferencesState());
-			case 'Adjust Delay and Combo':
-				MusicBeatState.switchState(new options.NoteOffsetState());
+			case 'Graphics':
+				openSubState(new options.GraphicsSettingsSubState());
+			case 'Visuals and UI':
+				openSubState(new options.VisualsUISubState());
+			case 'Gameplay':
+				openSubState(new options.GameplaySettingsSubState());
+			case 'Misc':
+				openSubState(new options.MiscSubState());
 		}
 	}
 
@@ -38,7 +38,7 @@ class OptionsState extends MusicBeatState
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
-		bg.color = 0xFFea71fd;
+		bg.color = 0xffff4e4e;
 		bg.updateHitbox();
 
 		bg.screenCenter();
@@ -93,14 +93,7 @@ class OptionsState extends MusicBeatState
 		if (controls.BACK)
 		{
 			FlxG.sound.play(Paths.sound('cancelMenu'));
-			if (onPlayState)
-			{
-				StageData.loadDirectory(PlayState.SONG);
-				LoadingState.loadAndSwitchState(new PlayState());
-				FlxG.sound.music.volume = 0;
-			}
-			else
-				MusicBeatState.switchState(new MainMenuState());
+			MusicBeatState.switchState(new OptionsState());
 		}
 		else if (controls.ACCEPT)
 			openSelectedSubstate(options[curSelected]);

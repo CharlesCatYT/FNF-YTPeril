@@ -11,7 +11,6 @@ import openfl.display._internal.stats.DrawCallContext;
 #if flash
 import openfl.Lib;
 #end
-
 #if openfl
 import openfl.system.System;
 #end
@@ -45,7 +44,10 @@ class FPS extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat(Paths.font("vcr.ttf"), 14, color);
+		if (ClientPrefs.data.fullscreen)
+			defaultTextFormat = new TextFormat(Paths.font("vcr.ttf"), 20, color);
+		else
+			defaultTextFormat = new TextFormat(Paths.font("vcr.ttf"), 14, color);
 		autoSize = LEFT;
 		multiline = true;
 		text = "FPS: ";
@@ -77,19 +79,23 @@ class FPS extends TextField
 
 		var currentCount = times.length;
 		currentFPS = Math.round((currentCount + cacheCount) / 2);
-		if (currentFPS > ClientPrefs.data.framerate) currentFPS = ClientPrefs.data.framerate;
+		if (currentFPS > ClientPrefs.data.framerate)
+			currentFPS = ClientPrefs.data.framerate;
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
 			text = "FPS: " + currentFPS;
 			var memoryMegas:Float = 0;
-			
+
 			#if openfl
 			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
 			text += "\nMemory: " + memoryMegas + " MB";
 			#end
 
-			text += "\nFNF: YT Animation Peril" + states.MainMenuState.ytPerilVersion;
+			text += "\nFNF: YT Animation Peril v" + states.MainMenuState.ytPerilVersion;
+			#if debug
+			text += "\nState: " + FlxG.state;
+			#end
 
 			textColor = 0xFFFFFFFF;
 			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.data.framerate / 2)
