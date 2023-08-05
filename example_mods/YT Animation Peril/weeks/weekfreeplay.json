@@ -1,0 +1,59 @@
+{
+	"storyName": "freeplay",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "freeplay",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Toony",
+			"fasttoon",
+			[
+				60,
+				153,
+				60
+			]
+		],
+		[
+			"Schooled",
+			"mrsmart",
+			[
+				86,
+				113,
+				215
+			]
+		],
+		[
+			"Hornstromp",
+			"player",
+			[
+				160,
+				0,
+				33
+			]
+		],
+		[
+			"Trampoline",
+			"brewstew",
+			[
+				0,
+				93,
+				193
+			]
+		]
+	],
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Freeplay Songs"
+}

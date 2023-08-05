@@ -1,4 +1,16 @@
 {
+	"storyName": "Acorn becomes Eminem's Father in Friday Night Funkin'",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "nutshellanimations",
+	"weekBefore": "week03",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
 	"songs": [
 		[
 			"Hilarious",
@@ -8,25 +20,22 @@
 				160,
 				160
 			]
+		],
+		[
+			"Idiot",
+			"acorn",
+			[
+				160,
+				160,
+				160
+			]
 		]
 	],
-	"hiddenUntilUnlocked": false,
-	"hideFreeplay": false,
-	"weekBackground": "nutshellanimations",
-	"difficulties": "",
 	"weekCharacters": [
 		"",
 		"",
 		""
 	],
-	"storyName": "Acorn becomes Eminem's Father in Friday Night Funkin'",
-	"weekName": "Nutshell Week",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": false,
-	"weekBefore": "week03",
-	"startUnlocked": true
+	"hiddenUntilUnlocked": false,
+	"weekName": "Nutshell Week"
 }
