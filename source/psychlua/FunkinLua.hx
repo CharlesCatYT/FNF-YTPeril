@@ -1769,6 +1769,10 @@ class FunkinLua
 		}
 		trace('lua file loaded succesfully:' + scriptName);
 
+		Lua_helper.add_callback(lua, "getGameplayChangerValue", function(tag:String) {
+			return ClientPrefs.getGameplaySetting(tag, false);
+		});
+		
 		call('onCreate', []);
 		#end
 	}
