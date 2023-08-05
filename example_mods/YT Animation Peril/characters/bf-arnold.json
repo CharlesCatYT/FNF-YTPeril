@@ -1,121 +1,114 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				3,
 				0
 			],
-			"loop": false,
-			"fps": 13,
 			"anim": "singLEFT",
-			"indices": [],
+			"fps": 13,
+			"image": "characters/Arnold_BF",
 			"name": "Arnold_BF Left",
-			"image": "characters/Arnold_BF"
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1,
 				0
 			],
-			"loop": false,
-			"fps": 13,
 			"anim": "singDOWN",
-			"indices": [],
+			"fps": 13,
+			"image": "characters/Arnold_BF",
 			"name": "Arnold_BF Down",
-			"image": "characters/Arnold_BF"
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				0
 			],
-			"loop": false,
-			"fps": 13,
 			"anim": "singUP",
-			"indices": [],
+			"fps": 13,
+			"image": "characters/Arnold_BF",
 			"name": "Arnold_BF Up",
-			"image": "characters/Arnold_BF"
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1,
 				0
 			],
-			"loop": false,
-			"fps": 13,
 			"anim": "singRIGHT",
-			"indices": [],
+			"fps": 13,
+			"image": "characters/Arnold_BF",
 			"name": "Arnold_BF Right",
-			"image": "characters/Arnold_BF"
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-1
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"image": "characters/Arnold_BF",
+			"name": "Arnold_BF MissD",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-1
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"image": "characters/Arnold_BF",
+			"name": "Arnold_BF MissR",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				-1
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"image": "characters/Arnold_BF",
+			"name": "Arnold_BF MissL",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				0
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"image": "characters/Arnold_BF",
+			"name": "Arnold_BF MissU",
+			"indices": []
 		},
 		{
 			"offsets": [
 				0,
 				0
 			],
-			"loop": true,
+			"indices": [],
 			"fps": 13,
 			"anim": "idle",
-			"indices": [],
-			"name": "Arnold_BF Idle",
-			"image": "characters/Arnold_BF"
-		},
-		{
-			"offsets": [
-				-1,
-				-1
-			],
 			"loop": false,
-			"fps": 24,
-			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "Arnold_BF MissD",
-			"image": "characters/Arnold_BF"
-		},
-		{
-			"offsets": [
-				3,
-				-1
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "Arnold_BF MissR",
-			"image": "characters/Arnold_BF"
-		},
-		{
-			"offsets": [
-				1,
-				-1
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "Arnold_BF MissL",
-			"image": "characters/Arnold_BF"
-		},
-		{
-			"offsets": [
-				3,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUPmiss",
-			"indices": [],
-			"name": "Arnold_BF MissU",
-			"image": "characters/Arnold_BF"
+			"name": "Arnold_BF Idle"
 		}
 	],
 	"no_antialiasing": false,
-	"gameover_properties": [
-		"bf-dead",
-		"fnf_loss_sfx",
-		"gameOver",
-		"gameOverEnd"
-	],
 	"image": "characters/Arnold_BF",
 	"position": [
 		-340,
@@ -129,8 +122,8 @@
 		255
 	],
 	"camera_position": [
-		90,
-		60
+		-240,
+		330
 	],
 	"sing_duration": 4,
 	"scale": 0.5

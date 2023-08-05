@@ -1,13 +1,14 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"loop": false,
-			"fps": 13,
 			"anim": "danceLeft",
+			"fps": 13,
+			"name": "Arnold_GF Idle",
 			"indices": [
 				0,
 				1,
@@ -20,17 +21,17 @@
 				8,
 				9,
 				10
-			],
-			"name": "Arnold_GF Idle"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"loop": false,
-			"fps": 13,
 			"anim": "danceRight",
+			"fps": 13,
+			"name": "Arnold_GF Idle",
 			"indices": [
 				15,
 				16,
@@ -47,8 +48,7 @@
 				27,
 				28,
 				29
-			],
-			"name": "Arnold_GF Idle"
+			]
 		}
 	],
 	"no_antialiasing": false,

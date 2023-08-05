@@ -56,7 +56,7 @@ local songdata = {
         'Isaiah Mods and CharlesCatYT',
         '5',
         'Isaiah Mods and',
-        'N/A',
+        'Techole',
     },
 
     ['Martian'] = {
@@ -111,8 +111,8 @@ local songdata = {
         'Idiot',
         'Vencerist',
         '5',
-        'Isaiah Mods and cloudy',
-        'N/A',
+        'Isaiah Mods, cloudy and',
+        'CharlesCatYT',
     },   
 
    ['Brainy'] = {
@@ -208,7 +208,7 @@ local songdata = {
     'Vencerist', -- Composer [2]
     '5', --  Length for onscreen [3]
     'TheAnimateMan', -- Artist [4]
-    'N/A', -- Charter [5]
+    'CharlesCatYT', -- Charter [5]
     },
 
     ['Voler'] = {
@@ -295,7 +295,7 @@ local songdata = {
     'ChiVi', -- Song Name [1]
     'CharlesCatYT', -- Composer [2]
     '5', --  Length for onscreen [3]
-    'Isaiah Mods', -- Artist [4]
+    'Isaiah Mods and CharlesCatYT', -- Artist [4]
     'Maicon', -- Charter [5]
     },
 
@@ -327,7 +327,7 @@ local songdata = {
         'Academic',
         'Isaiah Mods',
         '5',
-        'Isaiah Mods',
+        'Isaiah Mods and',
         'N/A',
     },
 
@@ -335,7 +335,7 @@ local songdata = {
         'Logical',
         'Isaiah Mods',
         '5',
-        'Isaiah Mods',
+        'TheAnimateMan and',
         'N/A',
     },
 

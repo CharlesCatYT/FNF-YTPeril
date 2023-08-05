@@ -41,7 +41,7 @@ end
 
 
 function onCreatePost()
-    makeLuaText('songText', songName .. ' - ' .. getProperty('storyDifficultyText') .. ' | ' .. Quotes[getRandomInt(1, 20)], 0, 2, 552);
+    makeLuaText('songText', songName .. ' | ' .. Quotes[getRandomInt(1, 20)], 0, 2, 552);
     setTextAlignment('songText', 'left');
     setTextSize('songText', 15);
     setObjectCamera('songText', 'camHUD');
