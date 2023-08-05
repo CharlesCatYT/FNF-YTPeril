@@ -43,6 +43,15 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.changeValue = 0.001;
 		addOption(option);
 
+		var option:Option = new Option('Hold Notes Visibility', 'These lines after hold notes will be shown with selecter visibility', 'holdNoteVisibility',
+			'percent');
+		addOption(option);
+		option.scrollSpeed = 1;
+		option.minValue = 0.0;
+		option.changeValue = 0.1;
+		option.maxValue = 1;
+		option.decimals = 1;
+
 		var option:Option = new Option('Hitsound Volume', 'Funny notes does \"Tick!\" when you hit them."', 'hitsoundVolume', 'percent');
 		addOption(option);
 		option.scrollSpeed = 1.6;

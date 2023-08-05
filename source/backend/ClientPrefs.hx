@@ -15,6 +15,7 @@ class SaveVariables
 	public var flashing:Bool = true;
 	public var laneUnderlay:Float = 0;
 	public var fullscreen:Bool = false;
+	public var holdNoteVisibility:Float = 1;
 	public var instantRespawn:Bool = false;
 	public var autoPause:Bool = true;
 	public var antialiasing:Bool = true;
