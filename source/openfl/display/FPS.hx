@@ -89,6 +89,8 @@ class FPS extends TextField
 			text += "\nMemory: " + memoryMegas + " MB";
 			#end
 
+			text += "\nFNF: YT Animation Peril" + states.MainMenuState.ytPerilVersion;
+
 			textColor = 0xFFFFFFFF;
 			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.data.framerate / 2)
 			{
