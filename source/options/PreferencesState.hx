@@ -5,7 +5,7 @@ import backend.StageData;
 
 class PreferencesState extends MusicBeatState
 {
-	var options:Array<String> = ['Graphics', 'Visuals and UI', 'Gameplay', 'Misc'];
+	var options:Array<String> = ['Graphics', 'Visuals and UI', 'Gameplay', 'Hit Windows', 'Misc'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 
 	private static var curSelected:Int = 0;
@@ -22,6 +22,8 @@ class PreferencesState extends MusicBeatState
 				openSubState(new options.VisualsUISubState());
 			case 'Gameplay':
 				openSubState(new options.GameplaySettingsSubState());
+			case 'Hit Windows':
+				openSubState(new options.HitWindowsSubState());
 			case 'Misc':
 				openSubState(new options.MiscSubState());
 		}
@@ -55,9 +57,9 @@ class PreferencesState extends MusicBeatState
 			grpOptions.add(optionText);
 		}
 
-		selectorLeft = new Alphabet(0, 0, '->', true);
+		selectorLeft = new Alphabet(0, 0, '>', true);
 		add(selectorLeft);
-		selectorRight = new Alphabet(0, 0, '<-', true);
+		selectorRight = new Alphabet(0, 0, '<', true);
 		add(selectorRight);
 
 		changeSelection();
