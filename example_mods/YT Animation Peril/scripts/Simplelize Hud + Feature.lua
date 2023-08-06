@@ -6,7 +6,7 @@ local songBarr = true; --- a bar that will show what playing rn with bpm  [defau
 local bopHead = false; --- chars bopping on the beat [default: false]   [credit to bbpanzu]
 local hideP2Notes = false; --- hide the opponent notes [default: false]
 local ExtraMinimalized = false; --- dat hud still annoying you? dont worry i got the better one [default: false]
-local FullHud = true; --- show everything like sick,etc.. just set it to true.. you will see [default: false]    [credit to  Batata ? on discord]         
+local FullHud = false; --- show everything like sick,etc.. just set it to true.. you will see [default: false]    [credit to  Batata ? on discord]         
 
                  --randomness--
 local funnybf = false; --- what the fuck is wrong with bf [default: false]               [credit to 4k_funny on youtube]
