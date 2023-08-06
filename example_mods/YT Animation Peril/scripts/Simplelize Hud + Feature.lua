@@ -9,7 +9,7 @@ local ExtraMinimalized = false; --- dat hud still annoying you? dont worry i got
 local FullHud = false; --- show everything like sick,etc.. just set it to true.. you will see [default: false]    [credit to  Batata ? on discord]         
 
                  --randomness--
-local funnybf = false; --- what the fuck is wrong with bf [default: false]               [credit to 4k_funny on youtube]
+local funnybf = true; --- what the fuck is wrong with bf [default: false]               [credit to 4k_funny on youtube]
 
 
 
@@ -94,8 +94,8 @@ end
    setProperty('timeTxt.x',1 * 760)
 end
 if not FullHud then
- setProperty('timeBarBG.visible', false)
- setProperty('timeBar.visible', false)
+ setProperty('timeBarBG.visible', true)
+ setProperty('timeBar.visible', true)
    if downscroll then
   setProperty('scoreTxt.y', 1*690)
   setProperty('timeTxt.y', getProperty('iconP1.y')+ 5)
@@ -226,12 +226,4 @@ function onBeatHit()
 			doTweenAngle('ree', 'iconP2', 0, 0.5, 'linear')
 		end
    end
-end
-
-function goodNoteHit(id, direction, noteType, isSustainNote)
-      if not isSustainNote then    
-         notehitlol = notehitlol + 1;
-         setTextString('tnh', 'Total Notes Hit: ' .. tostring(notehitlol))
-     end -- NOTE I DID NOT MAKE THIS FRANTASTIC24 MADE THIS! [real]
-
 end
