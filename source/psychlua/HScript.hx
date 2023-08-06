@@ -11,6 +11,8 @@ import sys.io.File;
 #if (HSCRIPT_ALLOWED && SScript >= "3.0.0")
 import tea.SScript;
 
+// its fixed now! u need use "public var examplevar = 0;" without quotes to use examplevar in another calls of runHaxeCode() tho
+
 class HScript extends SScript
 {
 	public var parentLua:FunkinLua;
