@@ -1,70 +1,66 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				3,
-				0
-			],
-			"anim": "singLEFT",
-			"fps": 150,
-			"image": "characters/Arnold_BF",
-			"name": "left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				1,
-				0
-			],
-			"anim": "singDOWN",
-			"fps": 150,
-			"image": "characters/Arnold_BF",
-			"name": "down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				2,
-				0
-			],
-			"anim": "singUP",
-			"fps": 150,
-			"image": "characters/Arnold_BF",
-			"name": "up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				1,
-				0
-			],
-			"anim": "singRIGHT",
-			"fps": 150,
-			"image": "characters/Arnold_BF",
-			"name": "right",
-			"indices": []
-		},
-		{
-			"offsets": [
-				0,
-				0
+				26,
+				7
 			],
 			"indices": [],
-			"fps": 13,
+			"fps": 24,
 			"anim": "idle",
 			"loop": false,
 			"name": "idle"
+		},
+		{
+			"offsets": [
+				101,
+				-44
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right"
+		},
+		{
+			"offsets": [
+				93,
+				-36
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left"
+		},
+		{
+			"offsets": [
+				82,
+				-22
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down"
+		},
+		{
+			"offsets": [
+				103,
+				-17
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Arnold_BF",
+	"image": "characters/Arnold_BF ",
 	"position": [
-		-340,
-		-200
+		-370,
+		-360
 	],
 	"healthicon": "bf-arnold",
 	"flip_x": true,
@@ -74,8 +70,8 @@
 		255
 	],
 	"camera_position": [
-		-240,
-		330
+		-280,
+		390
 	],
 	"sing_duration": 4,
 	"scale": 0.5
