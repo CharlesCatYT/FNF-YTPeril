@@ -4,6 +4,10 @@ import flixel.FlxBasic;
 import objects.Character;
 import psychlua.FunkinLua;
 import psychlua.CustomSubstate;
+#if sys
+import sys.FileSystem;
+import sys.io.File;
+#end
 #if (HSCRIPT_ALLOWED && SScript >= "3.0.0")
 import tea.SScript;
 
@@ -50,10 +54,22 @@ class HScript extends SScript
 
 	override public function new(?parent:FunkinLua, ?file:String)
 	{
+		var usesClasses = false;
+
 		if (file == null)
 			file = '';
+		#if sys
+		else if (FileSystem.exists(file))
+		{
+			var fileWithoutComments = ~/(\/[*](?:[^*]|[\r\n]|([*]+([^*\/]|[\r\n])))*[*]+\/|\/\/.*)/gm.replace(File.getContent(file), '');
+			usesClasses = ~/class\s.*\s*{/.match(fileWithoutComments);
+		}
+		#end
 
-		super(file, false);
+		super(null, false, false);
+		classSupport = usesClasses;
+		doFile(file);
+
 		parentLua = parent;
 		if (parent != null)
 			origin = parent.scriptName;
@@ -234,7 +250,8 @@ class HScript extends SScript
 			{
 				var retVal:SCall = null;
 				#if (SScript >= "3.0.0")
-				initHaxeModuleCode(funk, codeToRun);
+				initHaxeModule(funk);
+				funk.hscript.doString(codeToRun);
 				if (varsToBring != null)
 				{
 					for (key in Reflect.fields(varsToBring))

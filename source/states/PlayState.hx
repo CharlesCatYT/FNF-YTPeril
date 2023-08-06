@@ -426,6 +426,10 @@ class PlayState extends MusicBeatState
 		add(luaDebugGroup);
 		#end
 
+		#if (SScript >= "4.1.0")
+		SScript.defaultClassSupport = null;
+		#end
+
 		// "GLOBAL" SCRIPTS
 		#if LUA_ALLOWED
 		var foldersToCheck:Array<String> = Mods.directoriesWithFile(Paths.getPreloadPath(), 'scripts/');
@@ -484,10 +488,10 @@ class PlayState extends MusicBeatState
 		}
 		stagesFunc(function(stage:BaseStage) stage.createPost());
 
-		comboGroup = new FlxSpriteGroup();
-		add(comboGroup);
+		// INITIALIZE UI GROUPS
 		uiGroup = new FlxSpriteGroup();
-		add(uiGroup);
+		strumLineNotes = new FlxTypedGroup<StrumNote>();
+		comboGroup = new FlxSpriteGroup();
 
 		if (ClientPrefs.data.laneUnderlay > 0)
 		{
@@ -522,9 +526,10 @@ class PlayState extends MusicBeatState
 		uiGroup.add(timeBar);
 		uiGroup.add(timeTxt);
 
-		strumLineNotes = new FlxTypedGroup<StrumNote>();
+		add(comboGroup);
 		add(strumLineNotes);
 		add(grpNoteSplashes);
+		add(uiGroup);
 
 		if (ClientPrefs.data.timeBarType == 'Song Name')
 		{
