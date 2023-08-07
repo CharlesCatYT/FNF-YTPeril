@@ -5,9 +5,10 @@ Isaiah Mods::isaiah::Co-Director::::2F409E
 Vencerist::scientist::Composer, Artist, Animator::::FFFFFF
 Kimb.MP4::kimb::Artist, Animator::::29B300
 TheAnimateMan::animate::Artist, Animator, Composer, Charter::::FF3333
+cloudy::cloudy::Animator::::FFFFFF
 Beaniefamily::beanimation::Chromatic Scale Maker::::FFFFFF
 SauceyRed::sauceyred::Charter::::63408B
-Maicon / Bambi Enjoyer::maicon::Composer, Charter::::4013BB
+Bambi Enjoyer::maicon::Composer, Charter::::4013BB
 Oxyi142::oxyi::BG Artist::::0800FF
 RESURRECTION::resurrection::Charter::::0033FF
 Techole::techole::Charter::::0033FF
