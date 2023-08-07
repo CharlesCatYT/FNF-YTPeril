@@ -18,11 +18,11 @@ class MallEvil extends BaseStage
 		var evilSnow:BGSprite = new BGSprite('christmas/evilSnow', -200, 700);
 		add(evilSnow);
 		setDefaultGF('gf-christmas');
-		
-		//Winter Horrorland cutscene
+
+		// Winter Horrorland cutscene
 		if (isStoryMode && !seenCutscene)
 		{
-			switch(songName)
+			switch (songName)
 			{
 				case 'winter-horrorland':
 					setStartCallback(winterHorrorlandCutscene);
@@ -46,7 +46,8 @@ class MallEvil extends BaseStage
 
 		FlxTween.tween(blackScreen, {alpha: 0}, 0.7, {
 			ease: FlxEase.linear,
-			onComplete: function(twn:FlxTween) {
+			onComplete: function(twn:FlxTween)
+			{
 				remove(blackScreen);
 			}
 		});
