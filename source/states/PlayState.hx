@@ -174,7 +174,15 @@ class PlayState extends MusicBeatState
 	private var curSong:String = "";
 
 	public var gfSpeed:Int = 1;
-	public var health:Float = 1;
+	public var health(default, set):Float = 1;
+
+	inline function set_health(value:Float)
+	{
+		health = value > 2 ? 2 : value;
+		doDeathCheck(value < health);
+		return health;
+	}
+
 	public var combo:Int = 0;
 
 	public var healthBar:Bar;
@@ -697,7 +705,7 @@ class PlayState extends MusicBeatState
 			checkEventNote();
 	}
 
-	function set_songSpeed(value:Float):Float
+	inline function set_songSpeed(value:Float):Float
 	{
 		if (generatedMusic)
 		{
@@ -715,7 +723,7 @@ class PlayState extends MusicBeatState
 		return value;
 	}
 
-	function set_playbackRate(value:Float):Float
+	inline function set_playbackRate(value:Float):Float
 	{
 		if (generatedMusic)
 		{
@@ -1872,10 +1880,9 @@ class PlayState extends MusicBeatState
 		// RESET = Quick Game Over Screen
 		if (!ClientPrefs.data.noReset && controls.RESET && canReset && !inCutscene && startedCountdown && !endingSong)
 		{
-			health = 0;
+			doDeathCheck(true);
 			trace("RESET = True");
 		}
-		doDeathCheck();
 
 		if (unspawnNotes[0] != null)
 		{
@@ -1919,7 +1926,6 @@ class PlayState extends MusicBeatState
 						&& !boyfriend.animation.curAnim.name.endsWith('miss'))
 				{
 					boyfriend.dance();
-					// boyfriend.animation.curAnim.finish();
 				}
 
 				if (notes.length > 0)
@@ -2015,14 +2021,6 @@ class PlayState extends MusicBeatState
 		persistentDraw = true;
 		paused = true;
 
-		// 1 / 1000 chance for Gitaroo Man easter egg
-		/*if (FlxG.random.bool(0.1))
-		{
-			// gitaroo man easter egg
-			cancelMusicFadeTween();
-			MusicBeatState.switchState(new GitarooPause());
-		}
-		else { */
 		if (FlxG.sound.music != null)
 		{
 			FlxG.sound.music.pause();
@@ -2038,7 +2036,6 @@ class PlayState extends MusicBeatState
 				}
 		}
 		openSubState(new PauseSubState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
-		// }
 
 		#if desktop
 		DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
@@ -2204,7 +2201,6 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'Play Animation':
-				// trace('Anim to play: ' + value1);
 				var char:Character = dad;
 				switch (value2.toLowerCase().trim())
 				{

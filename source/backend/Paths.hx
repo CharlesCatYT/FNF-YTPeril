@@ -26,8 +26,8 @@ import backend.Mods;
 
 class Paths
 {
-	inline public static var SOUND_EXT = #if web "mp3" #else "ogg" #end;
-	inline public static var VIDEO_EXT = "mp4";
+	inline public static final SOUND_EXT = #if web "mp3" #else "ogg" #end;
+	inline public static final VIDEO_EXT = "mp4";
 
 	public static function excludeAsset(key:String)
 	{
@@ -203,7 +203,7 @@ class Paths
 		return 'assets/videos/$key.$VIDEO_EXT';
 	}
 
-	static public function sound(key:String, ?library:String):Sound
+	inline static public function sound(key:String, ?library:String):Sound
 	{
 		var sound:Sound = returnSound('sounds', key, library);
 		return sound;

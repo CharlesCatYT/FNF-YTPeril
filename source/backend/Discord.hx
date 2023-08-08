@@ -7,7 +7,7 @@ import lime.app.Application;
 class DiscordClient
 {
 	public static var isInitialized:Bool = false;
-	private static var _defaultID:String = "863222024192262205";
+	private static var _defaultID:String = "1120815399378878484";
 	public static var clientID(default, set):String = _defaultID;
 
 	private static var _options:Dynamic = {
