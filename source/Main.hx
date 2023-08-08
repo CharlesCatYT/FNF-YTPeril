@@ -211,6 +211,35 @@ class Main extends Sprite
 		}
 	}
 
+	static final quotes:Array<String> = [
+		"Blueballed. - gedehari",
+		"We have come for your errors. GET THE FUCK OUT OF MY CODE - CharlesCatYT",
+		"fuck flixel rendering stop using like 40 gigs of ram to load 2 spritesheets - doggo",
+		"*Bwoomp* your game crashed. :( - Senshi_Z",
+		"bababoey - Amanddica",
+		"This video is not available on YouTube. - YouTube",
+		"No search results... - YouTube",
+		"YouTube has unexpectedly stopped working! - YouTube",
+		"Demonetized! - YouTube",
+		"Goodbye cruel world - ShadowMario",
+		"old was better - TheAnimateMan",
+		"Copyright Strike! - YouTube",
+       "This video is private. - YouTube",
+	   "Itttts... AumSum Time! - AumSum",
+	   "grits is funni - Grits",
+	   "DMCA Takedown! - YouTube",
+	   "fix your grammer - SLB7",
+	   "j- NOOO - Vencerist"
+       "Oh, you are so unbelievable! - AumSum Narrator",
+	   "Ah bueno adios master - ShadowMario",
+	   "Skibidy bah mmm dada *explodes* - ShadowMario",
+	   "What have you done, you killed it! - BeastlyGhost",
+	   "Have you checked if the variable exists? - BeastlyGhost",
+	   "Have you even read the wiki before trying that? - BeastlyGhost",
+	   "Huh, did I forget something? - Yoshubs (?)",
+	   "Coder uses Explosion! It's SUPER EFFECTIVE! - NxtVithor"
+   ];
+
 	// Code was entirely made by sqirra-rng for their fnf engine named "Izzy Engine", big props to them!!!
 	// very cool person for real they don't get enough credit for their work
 	#if CRASH_HANDLER
@@ -224,7 +253,7 @@ class Main extends Sprite
 		dateNow = dateNow.replace(" ", "_");
 		dateNow = dateNow.replace(":", "'");
 
-		path = "./crash/" + "YTPeril_" + dateNow + ".txt";
+		path = "./crashes/" + "YTPeril_" + dateNow + ".txt";
 
 		for (stackItem in callStack)
 		{
@@ -237,12 +266,10 @@ class Main extends Sprite
 			}
 		}
 
-		errMsg += "\nUncaught Error: "
-			+ e.error
-			+ "\nPlease report this error to the GitHub page: https://github.com/ShadowMario/FNF-PsychEngine\n\n> Crash Handler written by: sqirra-rng";
+		errMsg += "\nUncaught Error: " + e.error + quotes[Std.random(quotes.length)] + "\nPlease report this error to the GitHub page: https://github.com/CharlesCatYT/FNF-YTPeril\n\n> Crash Handler written by: sqirra-rng";
 
-		if (!FileSystem.exists("./crash/"))
-			FileSystem.createDirectory("./crash/");
+		if (!FileSystem.exists("./crashes/"))
+			FileSystem.createDirectory("./crashes/");
 
 		File.saveContent(path, errMsg + "\n");
 
