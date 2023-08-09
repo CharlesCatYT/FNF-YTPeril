@@ -113,6 +113,9 @@
 	<haxelib name="hxCodec" if="VIDEOS_ALLOWED" />
 	<haxelib name="discord_rpc" if="desktop" />
 	<haxelib name="tjson" />
+	<haxelib name="systools" />
+	<ndll name="systools" haxelib="systools" />
+	
 	<haxedef name="openflPos" />
 	<define name="hscriptPos" if="hscript" />
 
