@@ -1326,7 +1326,12 @@ class PlayState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence (with Time Left)
+		#if playtester
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
+		#else
 		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength);
+		#end
 		#end
 		setOnScripts('songLength', songLength);
 		callOnScripts('onSongStart');
@@ -1708,6 +1713,10 @@ class PlayState extends MusicBeatState
 	function resetRPC(?cond:Bool = false)
 	{
 		#if desktop
+		#if playtester
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
+		#else
 		if (cond)
 			DiscordClient.changePresence(detailsText, SONG.song
 				+ " ("
@@ -1718,6 +1727,7 @@ class PlayState extends MusicBeatState
 				- ClientPrefs.data.noteOffset);
 		else
 			DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+		#end
 		#end
 	}
 
@@ -2038,7 +2048,12 @@ class PlayState extends MusicBeatState
 		openSubState(new PauseSubState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
 
 		#if desktop
+		#if playtester
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
+		#else
 		DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+		#end
 		#end
 	}
 
@@ -2105,7 +2120,12 @@ class PlayState extends MusicBeatState
 
 				#if desktop
 				// Game Over doesn't get his own variable because it's only used here
+				#if playtester
+				// Updating Discord Rich Presence
+				DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
+				#else
 				DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				#end
 				#end
 				isDead = true;
 				return true;
@@ -2621,7 +2641,6 @@ class PlayState extends MusicBeatState
 			}
 			else
 			{
-				trace('WENT BACK TO FREEPLAY??');
 				Mods.loadTopMod();
 				#if desktop DiscordClient.resetClientID(); #end
 

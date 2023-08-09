@@ -35,7 +35,7 @@ class PreferencesState extends MusicBeatState
 	override function create()
 	{
 		#if desktop
-		DiscordClient.changePresence("Options Menu", null);
+		DiscordClient.changePresence("Preferences Menu", null);
 		#end
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));

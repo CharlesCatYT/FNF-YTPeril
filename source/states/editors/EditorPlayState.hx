@@ -134,7 +134,12 @@ class EditorPlayState extends MusicBeatSubstate
 
 		#if desktop
 		// Updating Discord Rich Presence (with Time Left)
+		#if playtester
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
+		#else
 		DiscordClient.changePresence('Playtesting on Chart Editor', PlayState.SONG.song, null, true, songLength);
+		#end
 		#end
 		RecalculateRating();
 	}

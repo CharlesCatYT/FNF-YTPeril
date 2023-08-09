@@ -3,5 +3,6 @@
   "description": "its basically spongebob parodies but its just 'popular' youtube animations",
   "restart": true,
   "runsGlobally": true,
-  "color": [170, 0, 255]
+  "color": [170, 0, 255],
+  "discordRPC": "1120815399378878484"
 }

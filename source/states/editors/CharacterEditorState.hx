@@ -1171,8 +1171,13 @@ class CharacterEditorState extends MusicBeatState
 	function updatePresence()
 	{
 		#if desktop
+		#if playtester
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
+		#else
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("Character Editor", "Character: " + daAnim, leHealthIcon.getCharacter());
+		#end
 		#end
 	}
 

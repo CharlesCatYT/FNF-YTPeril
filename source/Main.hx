@@ -215,8 +215,6 @@ class Main extends Sprite
 		"Blueballed. - gedehari",
 		"We have come for your errors. GET THE FUCK OUT OF MY CODE - CharlesCatYT",
 		"fuck flixel rendering stop using like 40 gigs of ram to load 2 spritesheets - doggo",
-		"*Bwoomp* your game crashed. :( - Senshi_Z",
-		"bababoey - Amanddica",
 		"This video is not available on YouTube. - YouTube",
 		"No search results... - YouTube",
 		"YouTube has unexpectedly stopped working! - YouTube",
@@ -236,9 +234,7 @@ class Main extends Sprite
 		"Skibidy bah mmm dada *explodes* - ShadowMario",
 		"What have you done, you killed it! - BeastlyGhost",
 		"Have you checked if the variable exists? - BeastlyGhost",
-		"Have you even read the wiki before trying that? - BeastlyGhost",
-		"Huh, did I forget something? - Yoshubs (?)",
-		"Coder uses Explosion! It's SUPER EFFECTIVE! - NxtVithor"
+		"Have you even read the wiki before trying that? - BeastlyGhost"
 	];
 
 	// Code was entirely made by sqirra-rng for their fnf engine named "Izzy Engine", big props to them!!!

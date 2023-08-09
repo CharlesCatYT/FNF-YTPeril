@@ -18,7 +18,6 @@ class ResetScoreSubState extends MusicBeatSubstate
 	var difficulty:Int;
 	var week:Int;
 
-	// Week -1 = Freeplay
 	public function new(song:String, difficulty:Int, character:String, week:Int = -1)
 	{
 		this.song = song;
