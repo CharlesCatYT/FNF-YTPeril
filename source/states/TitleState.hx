@@ -106,8 +106,6 @@ class TitleState extends MusicBeatState
 
 		ClientPrefs.loadPrefs();
 
-		trace(MusicBeatState.getState);
-
 		#if CHECK_FOR_UPDATES
 		if (ClientPrefs.data.checkForUpdates && !closedState)
 		{
