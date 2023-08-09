@@ -72,7 +72,7 @@ class FlxSoundTray extends Sprite
 		text.antiAliasType = AntiAliasType.NORMAL;
 		text.gridFitType = GridFitType.PIXEL;
 		#else
-        // No.
+		// No.
 		#end
 		var dtf:TextFormat = new TextFormat(Paths.font("youtube.ttf"), 8, 0xffffff);
 		dtf.align = TextFormatAlign.CENTER;
