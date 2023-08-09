@@ -93,7 +93,7 @@ class FPS extends TextField
 			#end
 
 			text += "\nFNF: YT Animation Peril v" + states.MainMenuState.ytPerilVersion;
-			text += "\nState: " + FlxG.state;
+			text += "\nState: " + MusicBeatState.getState;
 
 			textColor = 0xFFFFFFFF;
 			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.data.framerate / 2)
