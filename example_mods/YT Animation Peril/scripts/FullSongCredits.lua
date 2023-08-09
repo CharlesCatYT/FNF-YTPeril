@@ -191,7 +191,7 @@ local songdata = {
         'Number One',
         'CharlesCatYT',
         '5',
-        'Kimb.MP4 and',
+        'Kimb.MP4, Isaiah Mods, CharlesCatYT',
         'SauceyRed',
     },
 
@@ -199,7 +199,7 @@ local songdata = {
         'Life Hack',
         'Isaiah Mods',
         '5',
-        'Kimb.MP4 and',
+        'Kimb.MP4, Isaiah Mods, CharlesCatYT',
         'CharlesCatYT',
     },
     
