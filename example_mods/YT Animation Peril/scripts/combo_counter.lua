@@ -38,27 +38,27 @@ function goodNoteHit(id, direction, noteType, isSustainNote)
 	
 	if not isSustainNote then
 		if rawNoteRating == 'sick' then
-			noteRating = "Sick!!"
+			noteRating = "Perfect!!"
 			if coloredText then
 				colorScore = "FFF09E"	
 			end
 		elseif rawNoteRating == 'good' then
-			noteRating = "Good!"
+			noteRating = "Decent!"
 			if coloredText then
 				colorScore = "9BF074"
 			end
 		elseif rawNoteRating == 'bad' then
-			noteRating = "Bad"
+			noteRating = "Wait what?"
 			if coloredText then
 				colorScore = "E03E3E"
 			end
 		elseif rawNoteRating == 'shit' then
-			noteRating = "Shit"
+			noteRating = "Bruh."
 			if coloredText then
 				colorScore = "6D6C99"
 			end
 		else
-			noteRating = "HOW"
+			noteRating = "WHAT HOW?!?!?"
 			if coloredText then
 				colorScore = "FFFFFF"
 			end
