@@ -2,6 +2,8 @@
 
 name: YT Peril Build
 
+# it doesnt work so just compile it yourself idk figure it out
+
 
 # Controls when the action will run.
 on:
