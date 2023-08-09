@@ -155,9 +155,9 @@
 	<!--Enable this for Nape release builds for a serious peformance improvement-->
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 
-	<haxedef name="HXCPP_GC_SUMMARY" if="cpp debug"/>
+	<haxedef name="HXCPP_GC_SUMMARY" if="cpp debug" />
 
-	<setenv name="next"/>
+	<setenv name="next" />
 
 	<!--Used for Izzy Engine's crash handler-->
 	<section if="CRASH_HANDLER">
@@ -175,17 +175,26 @@
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
-	
-	<icon path="art/icon1.png" size='1'/>
-	<icon path="art/icon2.png" size='2'/>
-	<icon path="art/icon4.png" size='4'/>
-	<icon path="art/icon8.png" size='8'/>
-	<icon path="art/icon16.png" size='16'/>
-	<icon path="art/icon24.png" size='24'/>
-	<icon path="art/icon32.png" size='32'/>
-	<icon path="art/icon48.png" size='48'/>
-	<icon path="art/icon64.png" size='64'/>
-	<icon path="art/icon128.png" size='128'/>
-	<icon path="art/icon256.png" size='256'/>
+
+	<icon path="art/icon1.png" size='1' />
+	<icon path="art/icon2.png" size='2' />
+	<icon path="art/icon4.png" size='4' />
+	<icon path="art/icon8.png" size='8' />
+	<icon path="art/icon16.png" size='16' />
+	<icon path="art/icon24.png" size='24' />
+	<icon path="art/icon32.png" size='32' />
+	<icon path="art/icon48.png" size='48' />
+	<icon path="art/icon64.png" size='64' />
+	<icon path="art/icon128.png" size='128' />
+	<icon path="art/icon256.png" size='256' />
 	<icon path="art/iconOG.png" />
+
+	<!-- ________________________ Import Platform-Specific Stuff _____________________________ -->
+
+	<target id="haxe" tool="linker" if="linux">
+		<lib name="/usr/lib64/libX11.so" if="HXCPP_M64" /> <!--linux support-->
+	</target>
+	<target id="haxe" tool="linker" if="macos">
+		<lib name="/lib64/libX11.a" if="HXCPP_M64" /> <!--Macos support-->
+	</target>
 </project>
