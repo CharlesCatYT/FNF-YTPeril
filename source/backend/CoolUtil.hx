@@ -21,6 +21,15 @@ class CoolUtil
 	inline public static function capitalize(text:String)
 		return text.charAt(0).toUpperCase() + text.substr(1).toLowerCase();
 
+	public static function dashToSpace(string:String):String
+		return string.replace("-", " ");
+
+	public static function spaceToDash(string:String):String
+		return string.replace(" ", "-");
+
+	public static function swapSpaceDash(string:String):String
+		return StringTools.contains(string, '-') ? dashToSpace(string) : spaceToDash(string);
+
 	inline public static function coolTextFile(path:String):Array<String>
 	{
 		var daList:String = null;

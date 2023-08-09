@@ -42,6 +42,12 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			'cacheOnGPU', 'bool');
 		addOption(option);
 
+		var option:Option = new Option('Use System Cursor', // Name
+		"If checked, uses the system mouse cursor instead of the default Flixel one.", // Description
+		'systemCursor', 'bool');
+	addOption(option);
+	option.onChange = onChangeSystemCursor;
+
 		var option:Option = new Option('Fullscreen', "Should the game be maximized?", 'fullscreen', 'bool');
 		addOption(option);
 		option.onChange = onChangeFullscreen;
@@ -95,5 +101,10 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 	public static function onChangeFullscreen()
 	{
 		FlxG.fullscreen = ClientPrefs.data.fullscreen;
+	}
+
+	public static function onChangeSystemCursor()
+	{
+		FlxG.mouse.useSystemCursor = ClientPrefs.data.systemCursor;
 	}
 }
