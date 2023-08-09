@@ -138,6 +138,8 @@ class MusicBeatState extends FlxUIState
 			return;
 		}
 
+		Main.initialState = Type.getClass(nextState);
+
 		if (FlxTransitionableState.skipNextTransIn)
 			FlxG.switchState(nextState);
 		else
