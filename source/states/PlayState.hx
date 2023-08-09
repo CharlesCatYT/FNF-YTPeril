@@ -2220,18 +2220,19 @@ class PlayState extends MusicBeatState
 					camHUD.zoom += flValue2;
 				}
 
-		case 'Set Cam Zoom':
-			var val1:Float = Std.parseFloat(value1);
-			var val2:Float = Std.parseFloat(value2);
+			case 'Set Cam Zoom':
+				var val1:Float = Std.parseFloat(value1);
+				var val2:Float = Std.parseFloat(value2);
 
-			if (value2 == '')
-			{
-				defaultCamZoom = val1;
-			}
-			else
-			{
-				defaultCamZoom = val1;
-				FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, val2, {ease: FlxEase.sineInOut});
+				if (value2 == '')
+				{
+					defaultCamZoom = val1;
+				}
+				else
+				{
+					defaultCamZoom = val1;
+					FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, val2, {ease: FlxEase.sineInOut});
+				}
 
 			case 'Play Animation':
 				var char:Character = dad;

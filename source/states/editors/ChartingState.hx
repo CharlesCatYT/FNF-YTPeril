@@ -2276,10 +2276,11 @@ class ChartingState extends MusicBeatState
 			+ "\n\nBeat: "
 			+ Std.string(curDecBeat).substring(0, 4)
 			+ "\n\nStep: "
-			+ curStep
-			+ "\n\nBeat Snap: "
-			+ quantization
-			+ "th";
+			+ curStep +
+		if ((quantization - 2) % 10 == 0 && quantization != 12)
+			"\n\nBeat Snap: " + quantization + "nd";
+		else
+			"\n\nBeat Snap: " + quantization + "th";
 
 		var playedSound:Array<Bool> = [false, false, false, false]; // Prevents ouchy GF sex sounds
 		curRenderedNotes.forEachAlive(function(note:Note)
