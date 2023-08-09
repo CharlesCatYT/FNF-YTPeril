@@ -1,13 +1,14 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				5,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
+			"fps": 24,
+			"name": "bf brewstew left",
 			"indices": [
 				0,
 				1,
@@ -19,17 +20,17 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew left"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				-2
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
+			"fps": 24,
+			"name": "bf brewstew down",
 			"indices": [
 				0,
 				1,
@@ -41,17 +42,17 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew down"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				2
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
+			"fps": 24,
+			"name": "bf brewstew up",
 			"indices": [
 				0,
 				1,
@@ -63,17 +64,17 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew up"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-7,
 				1
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "bf brewstew right",
 			"indices": [
 				0,
 				1,
@@ -85,17 +86,17 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew right"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				5,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "bf brewstew left miss",
 			"indices": [
 				0,
 				1,
@@ -107,17 +108,17 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew left miss"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				2
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "bf brewstew up miss",
 			"indices": [
 				0,
 				1,
@@ -129,17 +130,17 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew up miss"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-7,
 				1
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "bf brewstew right miss",
 			"indices": [
 				0,
 				1,
@@ -151,17 +152,17 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew right miss"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				-2
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "bf brewstew down miss",
 			"indices": [
 				0,
 				1,
@@ -173,52 +174,51 @@
 				7,
 				8,
 				9
-			],
-			"name": "bf brewstew down miss"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				30,
 				-160
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "firstDeath",
-			"indices": [],
-			"name": "bf brewstew dies"
+			"fps": 24,
+			"name": "bf brewstew dies",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				30,
 				-80
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "deathConfirm",
-			"indices": [],
-			"name": "bf brewstew dead confirm"
-		},
-		{
-			"offsets": [
-				30,
-				-161
-			],
-			"loop": true,
 			"fps": 24,
-			"anim": "deathLoop",
-			"indices": [],
-			"name": "bf brewstew dead loop"
+			"name": "bf brewstew dead confirm",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				-5,
+				179,
+				-399
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "bf brewstew dead loop",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-3,
 				0
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "bf brewstew idle"
+			"fps": 24,
+			"name": "bf brewstew idle",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -235,8 +235,8 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		80,
+		110
 	],
 	"sing_duration": 4,
 	"scale": 1

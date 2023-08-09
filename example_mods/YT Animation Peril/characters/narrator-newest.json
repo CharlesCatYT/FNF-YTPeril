@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 16,
 			"anim": "idle",
-			"indices": [],
-			"name": "aumsum narrator idle"
+			"fps": 16,
+			"name": "aumsum narrator idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				50,
 				28
 			],
-			"loop": false,
-			"fps": 16,
 			"anim": "singUP",
-			"indices": [],
-			"name": "aumsum narrator up"
+			"fps": 16,
+			"name": "aumsum narrator up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				64,
 				-1
 			],
-			"loop": false,
-			"fps": 16,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "aumsum narrator right"
+			"fps": 16,
+			"name": "aumsum narrator right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				38,
 				-3
 			],
-			"loop": false,
-			"fps": 16,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "aumsum narrator down"
+			"fps": 16,
+			"name": "aumsum narrator down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				40,
 				2
 			],
-			"loop": false,
-			"fps": 16,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "aumsum narrator left"
+			"fps": 16,
+			"name": "aumsum narrator left",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -70,8 +70,8 @@
 		0
 	],
 	"camera_position": [
-		-20,
-		0
+		-100,
+		-100
 	],
 	"sing_duration": 6.1,
 	"scale": 1

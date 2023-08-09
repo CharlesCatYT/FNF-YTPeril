@@ -1,73 +1,67 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
+			"fps": 24,
+			"name": "Pencimate Idle",
 			"image": "characters/Pencilmate",
-			"name": "Pencimate Idle"
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				67,
+				66,
 				10
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
+			"fps": 24,
+			"name": "Pencimate left",
 			"image": "characters/Pencilmate",
-			"name": "Pencimate left"
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				56,
 				-21
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
+			"fps": 24,
+			"name": "Pencimate down",
 			"image": "characters/Pencilmate",
-			"name": "Pencimate down"
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				25,
 				101
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
+			"fps": 24,
+			"name": "Pencimate up",
 			"image": "characters/Pencilmate",
-			"name": "Pencimate up"
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-30,
 				9
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
+			"fps": 24,
+			"name": "Pencimate right",
 			"image": "characters/Pencilmate",
-			"name": "Pencimate right"
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"gameover_properties": [
-		"bf-dead",
-		"fnf_loss_sfx",
-		"gameOver",
-		"gameOverEnd"
-	],
 	"image": "characters/Pencilmate",
 	"position": [
 		0,

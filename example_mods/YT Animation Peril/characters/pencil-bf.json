@@ -1,73 +1,67 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-70
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"image": "characters/BFPencil",
-			"name": "BF Pencil Idle"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				24,
-				-52
-			],
-			"anim": "singLEFT",
 			"fps": 24,
-			"name": "BF Pencil left0",
+			"name": "BF Pencil Idle",
 			"image": "characters/BFPencil",
 			"indices": []
 		},
 		{
 			"offsets": [
+				20,
+				-56
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"image": "characters/BFPencil",
+			"name": "BF Pencil left0"
+		},
+		{
+			"loop": false,
+			"offsets": [
 				-4,
-				-71
+				-87
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
+			"fps": 24,
+			"name": "BF Pencil down0",
 			"image": "characters/BFPencil",
-			"name": "BF Pencil down0"
+			"indices": []
 		},
 		{
-			"offsets": [
-				-31,
-				73
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-27,
+				40
+			],
 			"anim": "singUP",
-			"indices": [],
+			"fps": 24,
+			"name": "BF Pencil up0",
 			"image": "characters/BFPencil",
-			"name": "BF Pencil up0"
+			"indices": []
 		},
 		{
-			"offsets": [
-				-100,
-				-74
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-63,
+				-93
+			],
 			"anim": "singRIGHT",
-			"indices": [],
+			"fps": 24,
+			"name": "BF Pencil right0",
 			"image": "characters/BFPencil",
-			"name": "BF Pencil right0"
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"gameover_properties": [
-		"bf-dead",
-		"fnf_loss_sfx",
-		"gameOver",
-		"gameOverEnd"
-	],
 	"image": "characters/BFPencil",
 	"position": [
 		0,
@@ -76,8 +70,8 @@
 	"healthicon": "pencil-bf",
 	"flip_x": true,
 	"healthbar_colors": [
-		0,
-		140,
+		40,
+		160,
 		195
 	],
 	"camera_position": [

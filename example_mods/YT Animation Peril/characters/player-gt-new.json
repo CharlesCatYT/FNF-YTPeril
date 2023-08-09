@@ -2,7 +2,7 @@
 	"animations": [
 		{
 			"offsets": [
-				45,
+				41,
 				-4
 			],
 			"loop": false,
@@ -49,28 +49,22 @@
 			"name": "Player up"
 		},
 		{
-			"image": "characters/Player_Sprites",
 			"offsets": [
 				-5,
 				0
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "idle",
-			"loop": false,
+			"indices": [],
+			"image": "characters/Player_Sprites",
 			"name": "Player idle"
 		}
 	],
 	"no_antialiasing": false,
-	"gameover_properties": [
-		"bf-dead",
-		"fnf_loss_sfx",
-		"gameOver",
-		"gameOverEnd"
-	],
 	"image": "characters/Player_Sprites",
 	"position": [
-		-100,
+		10,
 		330
 	],
 	"healthicon": "player",
@@ -82,7 +76,7 @@
 	],
 	"camera_position": [
 		-60,
-		50
+		70
 	],
 	"sing_duration": 4,
 	"scale": 1

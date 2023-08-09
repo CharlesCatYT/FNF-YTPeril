@@ -63,7 +63,7 @@
 			],
 			"anim": "singUP-alt",
 			"fps": 24,
-			"name": "up-alt",
+			"name": "altup",
 			"indices": []
 		}
 	],

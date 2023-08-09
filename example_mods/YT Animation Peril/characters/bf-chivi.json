@@ -1,73 +1,67 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"image": "characters/bf_chivi_assets",
+			"anim": "idle",
+			"indices": [],
 			"name": "bf chivi idle",
-			"indices": []
+			"image": "characters/bf_chivi_assets"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				13,
 				3
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"image": "characters/bf_chivi_assets",
+			"anim": "singLEFT",
+			"indices": [],
 			"name": "bf chivi left",
-			"indices": []
+			"image": "characters/bf_chivi_assets"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-25,
 				-9
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"image": "characters/bf_chivi_assets",
+			"anim": "singDOWN",
+			"indices": [],
 			"name": "bf chivi down",
-			"indices": []
+			"image": "characters/bf_chivi_assets"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				29,
 				23
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"image": "characters/bf_chivi_assets",
+			"anim": "singUP",
+			"indices": [],
 			"name": "bf chivi up",
-			"indices": []
+			"image": "characters/bf_chivi_assets"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-41,
 				3
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"image": "characters/bf_chivi_assets",
+			"anim": "singRIGHT",
+			"indices": [],
 			"name": "bf chivi right",
-			"indices": []
+			"image": "characters/bf_chivi_assets"
 		}
 	],
 	"no_antialiasing": false,
-	"gameover_properties": [
-		"bf-dead",
-		"fnf_loss_sfx",
-		"gameOver",
-		"gameOverEnd"
-	],
 	"image": "characters/bf_chivi_assets",
 	"position": [
 		0,
