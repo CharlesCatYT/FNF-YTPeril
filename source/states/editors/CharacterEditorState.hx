@@ -1171,7 +1171,7 @@ class CharacterEditorState extends MusicBeatState
 	function updatePresence()
 	{
 		#if desktop
-		#if playtester
+		#if PLAYTESTER
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
 		#else

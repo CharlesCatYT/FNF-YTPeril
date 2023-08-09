@@ -134,7 +134,7 @@ class EditorPlayState extends MusicBeatSubstate
 
 		#if desktop
 		// Updating Discord Rich Presence (with Time Left)
-		#if playtester
+		#if PLAYTESTER
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
 		#else

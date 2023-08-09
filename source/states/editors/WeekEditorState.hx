@@ -381,7 +381,7 @@ class WeekEditorState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence
-		#if playtester
+		#if PLAYTESTER
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("NO LEAKS", "NO LEAKS");
 		#else
