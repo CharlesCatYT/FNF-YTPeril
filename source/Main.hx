@@ -229,7 +229,7 @@ class Main extends Sprite
 	   "grits is funni - Grits",
 	   "DMCA Takedown! - YouTube",
 	   "fix your grammer - SLB7",
-	   "j- NOOO - Vencerist"
+	   "j- NOOO - Vencerist",
        "Oh, you are so unbelievable! - AumSum Narrator",
 	   "Ah bueno adios master - ShadowMario",
 	   "Skibidy bah mmm dada *explodes* - ShadowMario",
@@ -255,6 +255,8 @@ class Main extends Sprite
 
 		path = "./crashes/" + "YTPeril_" + dateNow + ".txt";
 
+		FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
+
 		for (stackItem in callStack)
 		{
 			switch (stackItem)
@@ -276,7 +278,7 @@ class Main extends Sprite
 		Sys.println(errMsg);
 		Sys.println("Crash dump saved in " + Path.normalize(path));
 
-		Application.current.window.alert(errMsg, "Error!");
+		Application.current.window.alert(errMsg, "YT Peril - Error!");
 		DiscordClient.shutdown();
 		Sys.exit(1);
 	}

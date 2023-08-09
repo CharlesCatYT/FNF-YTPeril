@@ -1,0 +1,1 @@
+not recommended to put your scripts here tho, do it in mods/YT Animation Peril/scripts/!
