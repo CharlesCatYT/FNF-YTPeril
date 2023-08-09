@@ -27,6 +27,11 @@ class DVDState extends MusicBeatState
 
 	override function create()
 	{
+		#if desktop
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("DVD Easter Egg", null);
+		#end
+
 		dvdLogo = new FlxSprite(0, 0);
 		dvdLogo.loadGraphic(Paths.image('dvdlogo'));
 		dvdLogo.setGraphicSize(200, 5);

@@ -31,6 +31,11 @@ class NoteSplashDebugState extends MusicBeatState
 	{
 		FlxG.sound.playMusic(Paths.music('breakfast'), 0.5);
 
+		#if desktop
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("Note Splash Debug", null);
+		#end
+
 		FlxG.camera.bgColor = FlxColor.fromHSL(0, 0, 0.5);
 		selection = new FlxSprite(0, 270).makeGraphic(150, 150, FlxColor.BLACK);
 		selection.alpha = 0.4;
