@@ -7,6 +7,7 @@ import openfl.Assets;
 import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
+import openfl.display.Bitmap;
 import flixel.math.FlxMath;
 import flixel.util.FlxColor;
 import openfl.events.Event;
