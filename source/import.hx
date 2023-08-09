@@ -1,21 +1,18 @@
 package;
 
-//Discord API
+// Discord API
 #if (!macro)
 #if desktop
 import backend.Discord;
 #end
-
-//Psych
+// Psych
 #if LUA_ALLOWED
 import llua.*;
 import llua.Lua;
 #end
-
 #if ACHIEVEMENTS_ALLOWED
 import backend.Achievements;
 #end
-
 import backend.Paths;
 import backend.Controls;
 import backend.CoolUtil;
@@ -27,14 +24,11 @@ import backend.Conductor;
 import backend.BaseStage;
 import backend.Difficulty;
 import backend.Mods;
-
 import objects.Alphabet;
 import objects.BGSprite;
-
 import states.PlayState;
 import states.LoadingState;
-
-//Flixel
+// Flixel
 #if (flixel >= "5.3.0")
 import flixel.sound.FlxSound;
 #else
@@ -53,5 +47,4 @@ import flixel.group.FlxSpriteGroup;
 import flixel.group.FlxGroup.FlxTypedGroup;
 
 using StringTools;
-
 #end

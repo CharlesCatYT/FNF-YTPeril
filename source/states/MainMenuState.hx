@@ -12,7 +12,7 @@ import options.OptionsState;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.7.1h'; // This is also used for Discord RPC
-	public static var ytPerilVersion:String = '1.0 DEMO'; // This is also used for Discord RPC
+	public static var ytPerilVersion:String = '1.0 Playtester Build'; // This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -80,7 +80,7 @@ class MainMenuState extends MusicBeatState
 			scale = 6 / optionShit.length;
 		}*/
 
-		if (FlxG.random.bool(0.4))
+		if (FlxG.random.bool(5))
 		{
 			optionShit.push('dvd');
 		}
@@ -121,6 +121,9 @@ class MainMenuState extends MusicBeatState
 		versionShit.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 
+		// HOW MANY VERSIONSHITS DO YOU NEED JUST LABEL THEM WITH A NUMBER AT THE END EACH BRUH SHADOWMARIO WHHYYYY
+		// eh haxe doesnt notice
+
 		changeItem();
 
 		#if ACHIEVEMENTS_ALLOWED
@@ -141,7 +144,9 @@ class MainMenuState extends MusicBeatState
 		{
 			FlxG.sound.music.volume += 0.5 * elapsed;
 			if (FreeplayState.vocals != null)
+			{
 				FreeplayState.vocals.volume += 0.5 * elapsed;
+			}
 		}
 		FlxG.camera.followLerp = FlxMath.bound(elapsed * 9 / (FlxG.updateFramerate / 60), 0, 1);
 
@@ -226,7 +231,7 @@ class MainMenuState extends MusicBeatState
 										if (PlayState.SONG != null)
 										{
 											PlayState.SONG.arrowSkin = null;
-											PlayState.SONG.splashSkin = null;
+											PlayState.SONG.splashSkin = null; // wait dont we have noteskins?
 										}
 								}
 							});

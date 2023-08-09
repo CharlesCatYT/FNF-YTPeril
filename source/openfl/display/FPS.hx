@@ -89,13 +89,11 @@ class FPS extends TextField
 
 			#if openfl
 			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
-			text += "\nMemory: " + memoryMegas + " MB";
+			text += "\nRAM Usage: " + memoryMegas + " MB";
 			#end
 
 			text += "\nFNF: YT Animation Peril v" + states.MainMenuState.ytPerilVersion;
-			#if debug
 			text += "\nState: " + FlxG.state;
-			#end
 
 			textColor = 0xFFFFFFFF;
 			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.data.framerate / 2)

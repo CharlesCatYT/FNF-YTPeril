@@ -2,7 +2,7 @@ scoreName = "Score"
 missesName = "Copyright Strikes"
 ratingNames = "Rating"
 function onCreate()
-    makeLuaText('cornerMark', ('FNF: YT Animation Peril v1.0 DEMO'), 1275, 0, 5)
+    makeLuaText('cornerMark', ('FNF: YT Animation Peril v1.0 Playtester Build'), 1275, 0, 5)
   setTextAlignment('cornerMark', 'RIGHT')
   setTextSize('cornerMark', 18)
   if not getPropertyFromClass('ClientPrefs', 'hideHud') then 

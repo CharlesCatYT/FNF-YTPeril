@@ -224,21 +224,22 @@ class Main extends Sprite
 		"Goodbye cruel world - ShadowMario",
 		"old was better - TheAnimateMan",
 		"Copyright Strike! - YouTube",
-       "This video is private. - YouTube",
-	   "Itttts... AumSum Time! - AumSum",
-	   "grits is funni - Grits",
-	   "DMCA Takedown! - YouTube",
-	   "fix your grammer - SLB7",
-	   "j- NOOO - Vencerist",
-       "Oh, you are so unbelievable! - AumSum Narrator",
-	   "Ah bueno adios master - ShadowMario",
-	   "Skibidy bah mmm dada *explodes* - ShadowMario",
-	   "What have you done, you killed it! - BeastlyGhost",
-	   "Have you checked if the variable exists? - BeastlyGhost",
-	   "Have you even read the wiki before trying that? - BeastlyGhost",
-	   "Huh, did I forget something? - Yoshubs (?)",
-	   "Coder uses Explosion! It's SUPER EFFECTIVE! - NxtVithor"
-   ];
+		"This video is private. - YouTube",
+		"Ohhhh nooooo! - AumSum",
+		"grits is funni - Grits",
+		"DMCA Takedown! - YouTube",
+		"fix your grammer - SLB7",
+		"j- NOOO - Vencerist",
+		"i hope you go mooseing and get fucked by a campfire - cyborg henry stickmin",
+		"Oh, you are so unbelievable! - AumSum Narrator",
+		"Ah bueno adios master - ShadowMario",
+		"Skibidy bah mmm dada *explodes* - ShadowMario",
+		"What have you done, you killed it! - BeastlyGhost",
+		"Have you checked if the variable exists? - BeastlyGhost",
+		"Have you even read the wiki before trying that? - BeastlyGhost",
+		"Huh, did I forget something? - Yoshubs (?)",
+		"Coder uses Explosion! It's SUPER EFFECTIVE! - NxtVithor"
+	];
 
 	// Code was entirely made by sqirra-rng for their fnf engine named "Izzy Engine", big props to them!!!
 	// very cool person for real they don't get enough credit for their work
@@ -253,9 +254,11 @@ class Main extends Sprite
 		dateNow = dateNow.replace(" ", "_");
 		dateNow = dateNow.replace(":", "'");
 
-		path = "./crashes/" + "YTPeril_" + dateNow + ".txt";
+		path = "./crash/" + "YTPeril_" + dateNow + ".txt";
 
 		FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
+
+		errMsg += quotes[Std.random(quotes.length)] + "\n";
 
 		for (stackItem in callStack)
 		{
@@ -268,10 +271,13 @@ class Main extends Sprite
 			}
 		}
 
-		errMsg += "\nUncaught Error: " + e.error + quotes[Std.random(quotes.length)] + "\nPlease report this error to the GitHub page: https://github.com/CharlesCatYT/FNF-YTPeril\n\n> Crash Handler written by: sqirra-rng";
+		errMsg += "\nUncaught Error: "
+			+ e.error
+			+
+			"\nPlease report this error to the GitHub repo page: https://github.com/CharlesCatYT/FNF-YTPeril\n\n> Crash Handler written by: sqirra-rng, slightly modified by The FNF YT Peril Team";
 
-		if (!FileSystem.exists("./crashes/"))
-			FileSystem.createDirectory("./crashes/");
+		if (!FileSystem.exists("./crash/"))
+			FileSystem.createDirectory("./crash/");
 
 		File.saveContent(path, errMsg + "\n");
 

@@ -508,7 +508,7 @@ class FunkinLua
 			}
 		});
 
-        Lua_helper.add_callback(lua, "resetState", MusicBeatState.resetState);
+		Lua_helper.add_callback(lua, "resetState", MusicBeatState.resetState);
 
 		// shitass stuff for epic coders like me B)  *image of obama giving himself a medal*
 		Lua_helper.add_callback(lua, "getObjectOrder", function(obj:String)

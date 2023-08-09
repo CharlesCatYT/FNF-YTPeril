@@ -52,8 +52,10 @@ class CustomSubstate extends MusicBeatSubstate
 		if (instance != null)
 		{
 			var tagObject:FlxObject = cast(PlayState.instance.variables.get(tag), FlxObject);
-			#if LUA_ALLOWED if (tagObject == null)
-				tagObject = cast(PlayState.instance.modchartSprites.get(tag), FlxObject); #end
+			#if LUA_ALLOWED
+			if (tagObject == null)
+				tagObject = cast(PlayState.instance.modchartSprites.get(tag), FlxObject);
+			#end
 
 			if (tagObject != null)
 			{

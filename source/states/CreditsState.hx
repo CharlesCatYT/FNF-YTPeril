@@ -86,7 +86,7 @@ class CreditsState extends MusicBeatState
 				'9E29CF'
 			],
 			[
-				'Gabriela',
+				'BeastlyGabi',
 				'gabriela',
 				'Playback Rate Modifier\nand other PRs',
 				'https://twitter.com/BeastlyGabi',
@@ -128,20 +128,6 @@ class CreditsState extends MusicBeatState
 				'64A250'
 			],
 			[
-				'Raltyro',
-				'raltyro',
-				'Bunch of lua fixes',
-				'https://twitter.com/raltyro',
-				'F3F3F3'
-			],
-			[
-				'Nebula the Zorua',
-				'nebula',
-				'Some Lua reworks',
-				'https://twitter.com/Nebula_Zorua',
-				'7D40B2'
-			],
-			[
 				'Keoiki',
 				'keoiki',
 				'Note Splash Animations and Latin Alphabet',
@@ -158,11 +144,27 @@ class CreditsState extends MusicBeatState
 			[
 				'Smokey',
 				'smokey',
-				'Sprite Atlas Support',
+				'Adobe Animate 2015 Sprite Atlas Support-\nWait, did I get it right?',
 				'https://twitter.com/Smokey_5_',
 				'483D92'
 			],
 			[''],
+			['Former Engine Contributors'],
+			[''],
+			[
+				'Raltyro',
+				'raltyro',
+				'Bunch of LUA fixes,\ncleared from 0.7.x',
+				'https://twitter.com/raltyro',
+				'F3F3F3'
+			],
+			[
+				'Nebula the Zorua',
+				'nebula',
+				'Some LUA reworks,\nwhich have been cleared from 0.7.x',
+				'https://twitter.com/Nebula_Zorua',
+				'7D40B2'
+			],
 			["Funkin' Crew"],
 			[
 				'ninjamuffin99',
