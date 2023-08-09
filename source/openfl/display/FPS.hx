@@ -45,9 +45,9 @@ class FPS extends TextField
 		selectable = false;
 		mouseEnabled = false;
 		if (ClientPrefs.data.fullscreen)
-			defaultTextFormat = new TextFormat(Paths.font("vcr.ttf"), 20, color);
+			defaultTextFormat = new TextFormat(Paths.font("youtube.ttf"), 20, color);
 		else
-			defaultTextFormat = new TextFormat(Paths.font("vcr.ttf"), 14, color);
+			defaultTextFormat = new TextFormat(Paths.font("youtube.ttf"), 14, color);
 		autoSize = LEFT;
 		multiline = true;
 		text = "FPS: ";

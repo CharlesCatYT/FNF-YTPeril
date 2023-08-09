@@ -28,8 +28,8 @@
 	<SubTexture name="tony idle0009" x="755" y="548" width="365" height="548"/>
 	<SubTexture name="tony idle0010" x="755" y="548" width="365" height="548"/>
 	<SubTexture name="tony idle0011" x="755" y="548" width="365" height="548"/>
-	<SubTexture name="tony idle0012" x="712" y="1096" width="365" height="548"/>
-	<SubTexture name="tony idle0013" x="712" y="1096" width="365" height="548"/>
+	<SubTexture name="tony idle0012" x="755" y="548" width="365" height="548"/>
+	<SubTexture name="tony idle0013" x="755" y="548" width="365" height="548"/>
 	<SubTexture name="tony left0000" x="0" y="0" width="390" height="550"/>
 	<SubTexture name="tony left0001" x="0" y="0" width="390" height="550"/>
 	<SubTexture name="tony left0002" x="0" y="550" width="390" height="550"/>
