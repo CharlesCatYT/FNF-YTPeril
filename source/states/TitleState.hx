@@ -175,11 +175,10 @@ class TitleState extends MusicBeatState
 
 		FlxG.mouse.visible = false;
 
-
 		if (FlxG.save.data != null && ClientPrefs.data.systemCursor)
-			{
-				FlxG.mouse.useSystemCursor = ClientPrefs.data.systemCursor;
-			}
+		{
+			FlxG.mouse.useSystemCursor = ClientPrefs.data.systemCursor;
+		}
 
 		if (FlxG.save.data.flashing == null && !FlashingState.leftState)
 		{
