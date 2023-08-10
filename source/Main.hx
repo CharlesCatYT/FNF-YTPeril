@@ -41,8 +41,6 @@ class Main extends Sprite
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
-	public static var watermark:Sprite;
-
 	public static function main():Void
 	{
 		Lib.current.addChild(new Main());
@@ -146,15 +144,6 @@ class Main extends Sprite
 		#if desktop
 		DiscordClient.start();
 		#end
-
-		var bitmapData = Assets.getBitmapData("assets/shared/images/watermark.png");
-
-		watermark = new Sprite();
-		watermark.addChild(new Bitmap(bitmapData)); // Sets the graphic of the sprite to a Bitmap object, which uses our embedded BitmapData class.
-		watermark.alpha = 0.4;
-		watermark.x = Lib.application.window.width - 10 - watermark.width;
-		watermark.y = Lib.application.window.height - 10 - watermark.height;
-		addChild(watermark);
 
 		// shader coords fix
 		FlxG.signals.gameResized.add(function(w, h)
