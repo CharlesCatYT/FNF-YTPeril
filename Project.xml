@@ -98,6 +98,7 @@
 		<assets path='example_mods' rename='mods' embed='false' />
 	</section>
 	<assets path='art/readme.txt' rename='readme.txt' />
+	<assets path="art/chroms" rename='chroms' />
 	<assets path='LICENSE' rename='license.txt' />
 
 	<!-- _______________________________ Libraries ______________________________ -->
@@ -115,7 +116,7 @@
 	<haxelib name="tjson" />
 	<haxelib name="systools" />
 	<ndll name="systools" haxelib="systools" />
-	
+
 	<haxedef name="openflPos" />
 	<define name="hscriptPos" if="hscript" />
 
