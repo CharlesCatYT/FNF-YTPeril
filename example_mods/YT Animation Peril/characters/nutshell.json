@@ -1,66 +1,66 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-23,
 				3
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "nutshell idle"
+			"fps": 24,
+			"name": "nutshell idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				51,
-				21
+				31,
+				14
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "nutshell left"
+			"fps": 24,
+			"name": "nutshell left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				61,
-				-54
+				55,
+				-48
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "nutshell down"
+			"fps": 24,
+			"name": "nutshell down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				76,
-				92
+				73,
+				76
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
-			"name": "nutshell up"
+			"fps": 24,
+			"name": "nutshell up",
+			"indices": []
 		},
 		{
-			"offsets": [
-				46,
-				10
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
 			"loop": false,
-			"name": "nutshell right"
+			"offsets": [
+				33,
+				8
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "nutshell right",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/nutshell_sprites",
 	"position": [
 		-170,
-		-200
+		-130
 	],
 	"healthicon": "nutshell",
 	"flip_x": false,
@@ -74,5 +74,5 @@
 		270
 	],
 	"sing_duration": 6.1,
-	"scale": 0.6
+	"scale": 0.5
 }
