@@ -3,6 +3,7 @@ package backend;
 import flixel.addons.ui.FlxUIState;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.FlxState;
+import video.FlxVideo;
 
 class MusicBeatState extends FlxUIState
 {
@@ -44,7 +45,6 @@ class MusicBeatState extends FlxUIState
 
 	override function update(elapsed:Float)
 	{
-		// everyStep();
 		var oldStep:Int = curStep;
 		timePassedOnState += elapsed;
 
@@ -174,6 +174,20 @@ class MusicBeatState extends FlxUIState
 		return cast(FlxG.state, MusicBeatState);
 	}
 
+	#if (VIDEOS_ALLOWED && windows)
+	override public function onFocus():Void
+	{
+		FlxVideo.onFocus();
+		super.onFocus();
+	}
+
+	override public function onFocusLost():Void
+	{
+		FlxVideo.onFocusLost();
+		super.onFocusLost();
+	}
+	#end
+
 	public function stepHit():Void
 	{
 		stagesFunc(function(stage:BaseStage)
@@ -191,7 +205,6 @@ class MusicBeatState extends FlxUIState
 
 	public function beatHit():Void
 	{
-		// trace('Beat: ' + curBeat);
 		stagesFunc(function(stage:BaseStage)
 		{
 			stage.curBeat = curBeat;
@@ -202,7 +215,6 @@ class MusicBeatState extends FlxUIState
 
 	public function sectionHit():Void
 	{
-		// trace('Section: ' + curSection + ', Beat: ' + curBeat + ', Step: ' + curStep);
 		stagesFunc(function(stage:BaseStage)
 		{
 			stage.curSection = curSection;

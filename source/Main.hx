@@ -13,7 +13,7 @@ import flixel.util.FlxColor;
 import openfl.events.Event;
 import openfl.display.StageScaleMode;
 import lime.app.Application;
-import states.TitleState;
+import states.StartupState;
 // crash handler stuff
 #if CRASH_HANDLER
 import openfl.events.UncaughtErrorEvent;
@@ -35,7 +35,7 @@ class Main extends Sprite
 		startFullscreen: false // if the game should start at fullscreen mode
 	};
 
-	public static var initialState:Class<FlxState> = TitleState; // so the fps can get the state properly :)
+	public static var initialState:Class<FlxState> = StartupState; // so the fps can get the state properly :)
 
 	public static var fpsVar:FPS;
 

@@ -38,10 +38,6 @@ typedef TitleData =
 
 class TitleState extends MusicBeatState
 {
-	public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
-	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
-	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
-
 	public static var initialized:Bool = false;
 
 	var blackScreen:FlxSprite;
@@ -69,42 +65,16 @@ class TitleState extends MusicBeatState
 
 	public static var updateVersion:String = '';
 
-	static function clearTemps(dir:String)
-	{
-		#if desktop
-		for (file in FileSystem.readDirectory(dir))
-		{
-			var file = './$dir/$file';
-			if (FileSystem.isDirectory(file))
-				clearTemps(file);
-			else if (file.endsWith(".tempcopy"))
-				FileSystem.deleteFile(file);
-		}
-		#end
-	}
-
 	override public function create():Void
 	{
-		Paths.clearStoredMemory();
-		Paths.clearUnusedMemory();
-
-		clearTemps("./");
-
-		#if LUA_ALLOWED
-		Mods.pushGlobalMods();
-		#end
-		Mods.loadTopMod();
-
-		FlxG.game.focusLostFramerate = 60;
-		FlxG.keys.preventDefaultKeys = [TAB];
+		// Paths.clearStoredMemory();
+		// Paths.clearUnusedMemory();
 
 		curWacky = FlxG.random.getObject(getIntroTextShit());
 
 		super.create();
 
 		FlxG.save.bind('funkin', CoolUtil.getSavePath());
-
-		ClientPrefs.loadPrefs();
 
 		#if CHECK_FOR_UPDATES
 		if (ClientPrefs.data.checkForUpdates && !closedState)
@@ -133,8 +103,6 @@ class TitleState extends MusicBeatState
 		}
 		#end
 
-		Highscore.load();
-
 		// IGNORE THIS!!!
 		titleJSON = Json.parse(Paths.getTextFromFile('images/gfDanceTitle.json'));
 
@@ -157,28 +125,6 @@ class TitleState extends MusicBeatState
 				titleJSON.gfy += 100;
 		}
 		#end
-
-		if (!initialized)
-		{
-			if (FlxG.save.data != null && ClientPrefs.data.fullscreen)
-			{
-				FlxG.fullscreen = ClientPrefs.data.fullscreen;
-			}
-			persistentUpdate = true;
-			persistentDraw = true;
-		}
-
-		if (FlxG.save.data.weekCompleted != null)
-		{
-			StoryMenuState.weekCompleted = FlxG.save.data.weekCompleted;
-		}
-
-		FlxG.mouse.visible = false;
-
-		if (FlxG.save.data != null && ClientPrefs.data.systemCursor)
-		{
-			FlxG.mouse.useSystemCursor = ClientPrefs.data.systemCursor;
-		}
 
 		if (FlxG.save.data.flashing == null && !FlashingState.leftState)
 		{
